@@ -1,0 +1,1914 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -o
+system_stub.twr -v 30 -l 30 system_stub_routed.ncd system_stub.pcf
+
+Design file:              system_stub_routed.ncd
+Physical constraint file: system_stub.pcf
+Device,package,speed:     xc7z020,clg484,C,-1 (PRODUCTION 1.06 2013-03-26)
+Report level:             verbose report, limited to 30 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+Delay:                  1.206ns (data path - clock path skew + uncertainty)
+  Source:               system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Destination:          system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2 (FF)
+  Data Path Delay:      1.171ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 to system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y99.BQ      Tcko                  0.518   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[2]
+                                                       system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    SLICE_X46Y99.CX      net (fanout=1)        0.625   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[1]
+    SLICE_X46Y99.CLK     Tdick                 0.028   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[2]
+                                                       system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.171ns (0.546ns logic, 0.625ns route)
+                                                       (46.6% logic, 53.4% route)
+
+--------------------------------------------------------------------------------
+Delay:                  1.118ns (data path - clock path skew + uncertainty)
+  Source:               system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 (FF)
+  Destination:          system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1 (FF)
+  Data Path Delay:      1.083ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0 to system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X46Y99.AQ      Tcko                  0.518   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[2]
+                                                       system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_0
+    SLICE_X46Y99.BX      net (fanout=1)        0.520   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[0]
+    SLICE_X46Y99.CLK     Tdick                 0.045   system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync[2]
+                                                       system_i/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.083ns (0.563ns logic, 0.520ns route)
+                                                       (52.0% logic, 48.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 5334 paths analyzed, 1732 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.684ns.
+--------------------------------------------------------------------------------
+Slack:                  1.316ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.582ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.582ns (3.013ns logic, 5.569ns route)
+                                                         (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.553ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.553ns (3.006ns logic, 5.547ns route)
+                                                         (35.1% logic, 64.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.537ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.361ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.361ns (3.005ns logic, 5.356ns route)
+                                                         (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.615ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.283ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.283ns (2.975ns logic, 5.308ns route)
+                                                         (35.9% logic, 64.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.717ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.182ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X27Y99.D1        net (fanout=2)        0.682   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X27Y99.CMUX      Topdc                 0.536   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2_F
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2
+    SLICE_X26Y97.B5        net (fanout=1)        0.571   system_i/axi4lite_0/N43
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.182ns (3.328ns logic, 4.854ns route)
+                                                         (40.7% logic, 59.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.743ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.155ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.155ns (2.918ns logic, 5.237ns route)
+                                                         (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.746ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.153ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X27Y99.D1        net (fanout=2)        0.682   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X27Y99.CMUX      Topdc                 0.536   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2_F
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2
+    SLICE_X26Y97.B5        net (fanout=1)        0.571   system_i/axi4lite_0/N43
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.153ns (3.321ns logic, 4.832ns route)
+                                                         (40.7% logic, 59.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.772ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.126ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.126ns (2.911ns logic, 5.215ns route)
+                                                         (35.8% logic, 64.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.785ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.113ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.113ns (3.013ns logic, 5.100ns route)
+                                                         (37.1% logic, 62.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.814ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.084ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.084ns (3.006ns logic, 5.078ns route)
+                                                         (37.2% logic, 62.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.824ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.075ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X26Y97.D1        net (fanout=2)        0.843   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X26Y97.DMUX      Tilo                  0.387   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW1
+    SLICE_X26Y97.B4        net (fanout=1)        0.452   system_i/axi4lite_0/N42
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.075ns (3.179ns logic, 4.896ns route)
+                                                         (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.853ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.046ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X26Y97.D1        net (fanout=2)        0.843   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X26Y97.DMUX      Tilo                  0.387   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW1
+    SLICE_X26Y97.B4        net (fanout=1)        0.452   system_i/axi4lite_0/N42
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        8.046ns (3.172ns logic, 4.874ns route)
+                                                         (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.938ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.961ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X27Y99.D1        net (fanout=2)        0.682   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X27Y99.CMUX      Topdc                 0.536   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2_F
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2
+    SLICE_X26Y97.B5        net (fanout=1)        0.571   system_i/axi4lite_0/N43
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.961ns (3.320ns logic, 4.641ns route)
+                                                         (41.7% logic, 58.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.964ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.934ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.934ns (2.910ns logic, 5.024ns route)
+                                                         (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.006ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.892ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.892ns (3.005ns logic, 4.887ns route)
+                                                         (38.1% logic, 61.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.016ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.883ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X27Y99.D1        net (fanout=2)        0.682   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X27Y99.CMUX      Topdc                 0.536   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2_F
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW2
+    SLICE_X26Y97.B5        net (fanout=1)        0.571   system_i/axi4lite_0/N43
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.883ns (3.290ns logic, 4.593ns route)
+                                                         (41.7% logic, 58.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.042ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.856ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3        net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A         Tilo                  0.124   system_i/simple_register_0/N8
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1        net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.856ns (2.880ns logic, 4.976ns route)
+                                                         (36.7% logic, 63.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.045ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.854ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X26Y97.D1        net (fanout=2)        0.843   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X26Y97.DMUX      Tilo                  0.387   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW1
+    SLICE_X26Y97.B4        net (fanout=1)        0.452   system_i/axi4lite_0/N42
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.854ns (3.171ns logic, 4.683ns route)
+                                                         (40.4% logic, 59.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.084ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.814ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.D         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX        net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK       Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.814ns (2.975ns logic, 4.839ns route)
+                                                         (38.1% logic, 61.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.123ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.776ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.066ns (0.171 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y99.A2        net (fanout=3)        0.990   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y99.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/s_arvalid_reg_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux1
+    SLICE_X26Y97.D1        net (fanout=2)        0.843   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/w_complete_mux
+    SLICE_X26Y97.DMUX      Tilo                  0.387   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1_SW1
+    SLICE_X26Y97.B4        net (fanout=1)        0.452   system_i/axi4lite_0/N42
+    SLICE_X26Y97.CLK       Tas                   0.043   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[3].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/areset_d[1]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1_rstpot
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_1
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.776ns (3.141ns logic, 4.635ns route)
+                                                         (40.4% logic, 59.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.131ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          10.000ns
+  Data Path Delay:      7.834ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X32Y99.A5        net (fanout=3)        0.687   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X32Y99.A         Tilo                  0.124   system_i/axi4lite_0_S_WREADY
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready1
+    PS7_X0Y0.MAXIGP0WREADY net (fanout=1)        0.904   system_i/axi4lite_0_S_WREADY
+    PS7_X0Y0.MAXIGP0ACLK   Tpssdck_MAXIGP0WREADY  0.883   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.834ns (3.632ns logic, 4.202ns route)
+                                                         (46.4% logic, 53.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.160ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          10.000ns
+  Data Path Delay:      7.805ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X32Y99.A5        net (fanout=3)        0.687   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X32Y99.A         Tilo                  0.124   system_i/axi4lite_0_S_WREADY
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready1
+    PS7_X0Y0.MAXIGP0WREADY net (fanout=1)        0.904   system_i/axi4lite_0_S_WREADY
+    PS7_X0Y0.MAXIGP0ACLK   Tpssdck_MAXIGP0WREADY  0.883   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.805ns (3.625ns logic, 4.180ns route)
+                                                         (46.4% logic, 53.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.212ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.686ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.686ns (2.918ns logic, 4.768ns route)
+                                                         (38.0% logic, 62.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.241ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.657ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.067ns (0.170 - 0.237)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X27Y94.A6        net (fanout=6)        0.322   system_i/axi4lite_0/N22
+    SLICE_X27Y94.A         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/b_complete_mux
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW0
+    SLICE_X26Y94.D2        net (fanout=1)        0.809   system_i/axi4lite_0/N45
+    SLICE_X26Y94.CLK       Tas                   0.045   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.657ns (2.911ns logic, 4.746ns route)
+                                                         (38.0% logic, 62.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.319ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.548ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.098ns (0.817 - 0.915)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA3 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D2        net (fanout=11)       1.242   system_i/axi4lite_0_M_WDATA[35]
+    SLICE_X26Y99.DMUX      Tilo                  0.388   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X31Y96.B6        net (fanout=6)        0.510   system_i/axi4lite_0/N22
+    SLICE_X31Y96.B         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1
+    SLICE_X31Y96.A4        net (fanout=1)        0.433   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready
+    SLICE_X31Y96.CLK       Tas                   0.095   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.548ns (2.968ns logic, 4.580ns route)
+                                                         (39.3% logic, 60.7% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.348ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.519ns (Levels of Logic = 7)
+  Clock Path Skew:      -0.098ns (0.817 - 0.915)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA0 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D3        net (fanout=9)        1.220   system_i/axi4lite_0_M_WDATA[0]
+    SLICE_X26Y99.DMUX      Tilo                  0.381   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2        net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X31Y96.B6        net (fanout=6)        0.510   system_i/axi4lite_0/N22
+    SLICE_X31Y96.B         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1
+    SLICE_X31Y96.A4        net (fanout=1)        0.433   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready
+    SLICE_X31Y96.CLK       Tas                   0.095   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.519ns (2.961ns logic, 4.558ns route)
+                                                         (39.4% logic, 60.6% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.352ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          10.000ns
+  Data Path Delay:      7.613ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA2 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D4        net (fanout=10)       1.029   system_i/axi4lite_0_M_WDATA[2]
+    SLICE_X26Y99.DMUX      Tilo                  0.380   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X32Y99.A5        net (fanout=3)        0.687   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X32Y99.A         Tilo                  0.124   system_i/axi4lite_0_S_WREADY
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready1
+    PS7_X0Y0.MAXIGP0WREADY net (fanout=1)        0.904   system_i/axi4lite_0_S_WREADY
+    PS7_X0Y0.MAXIGP0ACLK   Tpssdck_MAXIGP0WREADY  0.883   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.613ns (3.624ns logic, 3.989ns route)
+                                                         (47.6% logic, 52.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.360ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 (FF)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.589ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.016ns (0.813 - 0.829)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3 to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y92.CQ      Tcko                  0.456   system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt[3]
+                                                       system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3
+    SLICE_X34Y93.D2      net (fanout=7)        1.030   system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt[3]
+    SLICE_X34Y93.DMUX    Tilo                  0.388   system_i/axi4lite_0_M_RVALID[2]
+                                                       system_i/BTNs_5Bits/BTNs_5Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1
+    SLICE_X32Y96.D5      net (fanout=3)        0.631   system_i/axi4lite_0_M_AWREADY[2]
+    SLICE_X32Y96.DMUX    Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[2].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/write_active
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l1
+    SLICE_X30Y98.D4      net (fanout=1)        0.849   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l1
+    SLICE_X30Y98.CMUX    Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2      net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C       Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3      net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A       Tilo                  0.124   system_i/simple_register_0/N8
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1      net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D       Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX      net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK     Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.589ns (2.121ns logic, 5.468ns route)
+                                                       (27.9% logic, 72.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.408ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1 (FF)
+  Destination:          system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.540ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.017ns (0.813 - 0.830)
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1 to system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X35Y95.AQ      Tcko                  0.456   system_i/LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1
+                                                       system_i/LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1
+    SLICE_X31Y96.D2      net (fanout=4)        1.216   system_i/LEDs_8Bits/LEDs_8Bits/ip2bus_wrack_i_D1
+    SLICE_X31Y96.DMUX    Tilo                  0.358   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
+                                                       system_i/LEDs_8Bits/LEDs_8Bits/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1
+    SLICE_X30Y96.D4      net (fanout=3)        0.689   system_i/axi4lite_0_M_AWREADY[1]
+    SLICE_X30Y96.D       Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l3
+    SLICE_X30Y98.D2      net (fanout=1)        0.812   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l3
+    SLICE_X30Y98.CMUX    Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X27Y93.C2      net (fanout=3)        1.026   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X27Y93.C       Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_wvalid[4]
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0
+    SLICE_X26Y93.A3      net (fanout=6)        0.769   system_i/axi4lite_0/N22
+    SLICE_X26Y93.A       Tilo                  0.124   system_i/simple_register_0/N8
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set_SW2
+    SLICE_X26Y94.D1      net (fanout=1)        0.831   system_i/axi4lite_0/N47
+    SLICE_X26Y94.D       Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.AX      net (fanout=1)        0.332   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_glue_set
+    SLICE_X26Y94.CLK     Tdick                 0.016   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i
+                                                       system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.540ns (1.865ns logic, 5.675ns route)
+                                                       (24.7% logic, 75.3% route)
+
+--------------------------------------------------------------------------------
+Slack:                  2.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Destination:          system_i/processing_system7_0/processing_system7_0/PS7_i (OTHER)
+  Requirement:          10.000ns
+  Data Path Delay:      7.535ns (Levels of Logic = 5)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_i/processing_system7_0_FCLK_CLK0 rising at 0.000ns
+  Destination Clock:    system_i/processing_system7_0_FCLK_CLK0 rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: system_i/processing_system7_0/processing_system7_0/PS7_i to system_i/processing_system7_0/processing_system7_0/PS7_i
+    Location               Delay type         Delay(ns)  Physical Resource
+                                                         Logical Resource(s)
+    ---------------------------------------------------  -------------------
+    PS7_X0Y0.MAXIGP0WDATA1 Tpsscko_MAXIGP0WDATA  1.450   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    SLICE_X26Y99.D5        net (fanout=10)       0.981   system_i/axi4lite_0_M_WDATA[1]
+    SLICE_X26Y99.DMUX      Tilo                  0.350   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/SOFT_RESET_I/reset_error1_SW0
+    SLICE_X26Y99.C6        net (fanout=2)        0.180   system_i/simple_register_0/N16
+    SLICE_X26Y99.C         Tilo                  0.124   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_amesg_i[53]
+                                                         system_i/simple_register_0/simple_register_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done
+    SLICE_X30Y98.B1        net (fanout=6)        1.018   system_i/axi4lite_0_M_AWREADY[3]
+    SLICE_X30Y98.B         Tilo                  0.124   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.D6        net (fanout=1)        0.171   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l2
+    SLICE_X30Y98.CMUX      Topdc                 0.539   system_i/simple_register_0/simple_register_0/SOFT_RESET_I/wrack
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l4
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst
+    SLICE_X32Y99.A5        net (fanout=3)        0.687   system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i
+    SLICE_X32Y99.A         Tilo                  0.124   system_i/axi4lite_0_S_WREADY
+                                                         system_i/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready1
+    PS7_X0Y0.MAXIGP0WREADY net (fanout=1)        0.904   system_i/axi4lite_0_S_WREADY
+    PS7_X0Y0.MAXIGP0ACLK   Tpssdck_MAXIGP0WREADY  0.883   system_i/processing_system7_0/processing_system7_0/PS7_i
+                                                         system_i/processing_system7_0/processing_system7_0/PS7_i
+    ---------------------------------------------------  ---------------------------
+    Total                                        7.535ns (3.594ns logic, 3.941ns route)
+                                                         (47.7% logic, 52.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3/CLK
+  Location pin: SLICE_X38Y90.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_7/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/LEDs_8Bits/LEDs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_7/CLK
+  Location pin: SLICE_X42Y117.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_0/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_1/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_2/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[3]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_3/CLK
+  Location pin: SLICE_X98Y99.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_4/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_5/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+Slack: 8.040ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.980ns (Tmpw)
+  Physical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/gpio_Data_In[7]/CLK
+  Logical resource: system_i/SWs_8Bits/SWs_8Bits/gpio_core_1/Mshreg_gpio_Data_In_6/CLK
+  Location pin: SLICE_X98Y100.CLK
+  Clock network: system_i/processing_system7_0_FCLK_CLK0
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+No constraints were found to generate data for the Data Sheet Report section.
+Use the Advanced Analysis (-a) option or generate global constraints for each
+clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 5336 paths, 0 nets, and 2756 connections
+
+Design statistics:
+   Minimum period:   8.684ns{1}   (Maximum frequency: 115.154MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Jul  8 22:17:55 2013 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 790 MB
+
+
+

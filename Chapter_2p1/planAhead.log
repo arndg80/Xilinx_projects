@@ -1,0 +1,1149 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:11:23 MDT 2013
+# Start of session at: Sun Jun 23 22:44:33 2013
+# Process ID: 14955
+# Log file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.log
+# Journal file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2671.645 ; gain = 9.137
+save_project_as project_1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/project_1 -force
+INFO: [Designutils 20-1107] Saved project location '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/project_1'
+INFO: [Designutils 20-1102] Composite file path '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.srcs/sources_1/edk/system'
+save_project_as: Time (s): cpu = 00:00:09 ; elapsed = 00:00:27 . Memory (MB): peak = 2680.137 ; gain = 0.000
+close_project
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+Scanning sources...
+Finished scanning sources
+save_project_as Chapter_3p1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1 -force
+INFO: [Designutils 20-1107] Saved project location '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1'
+INFO: [Designutils 20-1102] Composite file path '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.srcs/sources_1/edk/system'
+save_project_as: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 2684.137 ; gain = 0.000
+close_project
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+Scanning sources...
+Finished scanning sources
+save_project_as Chapter_3p1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1 -force
+INFO: [Designutils 20-1107] Saved project location '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1'
+INFO: [Designutils 20-1102] Composite file path '/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.srcs/sources_1/edk/system'
+save_project_as: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2688.168 ; gain = 0.000
+INFO: [Edk 24-184] Launching XPS (Xilinx Platform Studio) for configuring XPS sub-design source 'system'...
+
+Xilinx Platform Studio
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Launching XPS GUI...
+INFO:EDK - Simulation, Implementation and Device configuration flows are
+   disabled in XPS when launched from PlanAhead. All these features are
+   available in PlanAhead.
+MainWindow
+ERROR:EDK - A license was not found for the XPS feature.
+   Typical causes for this error are either that there is no
+   license file found or that license files, which were found,
+   do not contain an unexpired license with the required
+   feature. The Xilinx License Configuration Manager
+   (XLCM) will be launched to assist you with
+   locating or obtaining a license file.
+WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 37 
+WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 37 
+Assigned Driver gpio 3.00.a for instance axi_gpio_0
+axi_gpio_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_BASEADDR -
+   ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the
+   MHS. 
+ERROR:EDK:4125 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0, PARAMETER: C_HIGHADDR -
+   ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the
+   MHS. 
+WARNING:EDK:2137 - Peripheral axi_gpio_0 is not accessible from any processor in
+   the system. Check Bus Interface connections and address parameters. 
+Assigned Driver generic 1.00.a for instance axi_interconnect_1
+Address Map for Processor processing_system7_0
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+INFO:EDK - Do connection by refering to bus interface of a processing_system7_0
+   in design
+INFO:EDK - Create new axi_interconnect IP instance axi_interconnect_1
+INFO:EDK - Connect clock port M_AXI_GP0_ACLK to processing_system7_0_FCLK_CLK0
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to processing_system7_0_FCLK_CLK0
+INFO:EDK - Successfully did connection by refering to M_AXI_GP0 bus interface in
+   processing_system7_0
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: axi_gpio_0
+Assigned Driver tmrctr 2.04.a for instance axi_timer_0
+axi_timer_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_timer, INSTANCE: axi_timer_0, PARAMETER: C_BASEADDR
+   - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the
+   MHS. 
+ERROR:EDK:4125 - IPNAME: axi_timer, INSTANCE: axi_timer_0, PARAMETER: C_HIGHADDR
+   - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the
+   MHS. 
+WARNING:EDK:2137 - Peripheral axi_timer_0 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+INFO:EDK - Do connection by refering to bus interface of a processing_system7_0
+   in design
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to processing_system7_0_FCLK_CLK0
+INFO:EDK - Successfully did connection by refering to M_AXI_GP0 bus interface in
+   processing_system7_0
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance:
+   axi_timer_0
+chipscope_axi_monitor_0 has been added to the project
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+chipscope_icon_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0, PORT:
+   control0 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a
+   connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0, PORT:
+   control0 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a
+   connection in the MHS. 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Running DRCs...
+
+Overriding IP level properties ...
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 2
+slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: tdi_in, CONNECTOR: bscan_tdi - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 101 
+WARNING:EDK:4180 - PORT: reset_in, CONNECTOR: bscan_reset - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 102 
+WARNING:EDK:4180 - PORT: shift_in, CONNECTOR: bscan_shift - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 103 
+WARNING:EDK:4180 - PORT: update_in, CONNECTOR: bscan_update - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 104 
+WARNING:EDK:4180 - PORT: sel_in, CONNECTOR: bscan_sel1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 105 
+WARNING:EDK:4180 - PORT: drck_in, CONNECTOR: bscan_drck1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 106 
+WARNING:EDK:4180 - PORT: capture_in, CONNECTOR: bscan_capture - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 107 
+WARNING:EDK:4181 - PORT: tdo_out, CONNECTOR: bscan_tdo1 - floating connection -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 108 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK1_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 351 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK2_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 352 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK3_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 353 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXRBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXRBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 94 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXWBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXWBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 95 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+ZynqConfig: Terminated for tcl mode
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+ZynqConfig: Terminated for tcl mode
+Chipscope Integrate Controller, instance 'chipscope_icon', exists in System 
+Done!
+
+Running DRCs...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock
+   'processing_system7_0_PS_CLK' is not specified. Clock DRCs will not be
+   performed for IPs connected to that clock port, unless they are connected
+   through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 2
+slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: tdi_in, CONNECTOR: bscan_tdi - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 101 
+WARNING:EDK:4180 - PORT: reset_in, CONNECTOR: bscan_reset - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 102 
+WARNING:EDK:4180 - PORT: shift_in, CONNECTOR: bscan_shift - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 103 
+WARNING:EDK:4180 - PORT: update_in, CONNECTOR: bscan_update - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 104 
+WARNING:EDK:4180 - PORT: sel_in, CONNECTOR: bscan_sel1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 105 
+WARNING:EDK:4180 - PORT: drck_in, CONNECTOR: bscan_drck1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 106 
+WARNING:EDK:4180 - PORT: capture_in, CONNECTOR: bscan_capture - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 107 
+WARNING:EDK:4181 - PORT: tdo_out, CONNECTOR: bscan_tdo1 - floating connection -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 108 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK1_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 351 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK2_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 352 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK3_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 353 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXRBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXRBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 94 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXWBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXWBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 95 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+ZynqConfig: Terminated for tcl mode
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+ZynqConfig: Terminated for tcl mode
+Chipscope Integrate Controller, instance 'chipscope_icon', exists in System 
+Done!
+ZynqConfig: Terminated for gui mode
+Writing filter settings....
+Done writing filter settings to:
+	/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sy
+stem/etc/system.filters
+Done writing Tab View settings to:
+	/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sy
+stem/etc/system.gui
+INFO: [Edk 24-128] XPS launched
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/system/system.xmp] -top -fileset [get_filesets sources_1] -import
+INFO: [Edk 24-182] Generating top-level verilog wrapper for the XPS sub-design source 'system'...
+
+Xilinx Platform Studio
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/__xps/pa/_system_top.tcl
+WARNING:EDK - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK - IPNAME: chipscope_axi_monitor, INSTANCE: chipscope_axi_monitor_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+WARNING:EDK - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK - IPNAME: chipscope_axi_monitor, INSTANCE: chipscope_axi_monitor_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Command Line: platgen -p xc7z020clg484-1 -lang verilog -intstyle pa -stubgen
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs 
+
+Parse
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs ...
+
+Create merged mhs ...
+WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK:4092 - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK:4092 - IPNAME: chipscope_axi_monitor, INSTANCE:
+   chipscope_axi_monitor_0 - Pre-Production version not verified on hardware for
+   architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK:4092 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock
+   'processing_system7_0_PS_CLK' is not specified. Clock DRCs will not be
+   performed for IPs connected to that clock port, unless they are connected
+   through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Modify defaults ...
+
+Creating stub ...
+
+Elaborating instances ...
+
+Inserting wrapper level ...
+
+Writing (stub) BMM ...
+
+Writing top-level HDL ...
+
+Total run time: 3.00 seconds
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+INFO: [Edk 24-126] Wrapper generated:/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/system/system_stub.v
+make_wrapper: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2688.293 ; gain = 0.000
+WARNING: [Designutils 20-342] File / dir doesn't exist, skipping: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/constrs_1/new/system.ucf
+close [ open /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/constrs_1/new/system.ucf w ]
+add_files -fileset constrs_1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/constrs_1/new/system.ucf
+reset_run impl_1
+launch_runs synth_1
+INFO: [Edk 24-181] Generating synthesized netlists for the XPS sub-design source 'system'...
+
+Xilinx Platform Studio
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+XPS% Evaluating file
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/__xps/pa/_system_synth.tcl
+WARNING:EDK - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK - IPNAME: chipscope_axi_monitor, INSTANCE: chipscope_axi_monitor_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+WARNING:EDK - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production version
+   not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK - IPNAME: chipscope_axi_monitor, INSTANCE: chipscope_axi_monitor_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Overriding IP level properties ...
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl is
+   overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK - Frequency for Top-Level Input Clock 'processing_system7_0_PS_CLK' is
+   not specified. Clock DRCs will not be performed for IPs connected to that
+   clock port, unless they are connected through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+****************************************************
+Creating system netlist for hardware specification..
+****************************************************
+platgen -p xc7z020clg484-1 -lang verilog -intstyle pa   -toplevel no -ti system_i -msg __xps/ise/xmsgprops.lst system.mhs
+
+Command Line: platgen -p xc7z020clg484-1 -lang verilog -intstyle pa -toplevel no
+-ti system_i -msg __xps/ise/xmsgprops.lst system.mhs 
+
+Parse
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs ...
+
+Read MPD definitions ...
+WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK:4092 - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK:4092 - IPNAME: chipscope_axi_monitor, INSTANCE:
+   chipscope_axi_monitor_0 - Pre-Production version not verified on hardware for
+   architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK:4092 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+WARNING:EDK:4092 - IPNAME: processing_system7, INSTANCE: processing_system7_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 39 
+WARNING:EDK:4092 - IPNAME: axi_gpio, INSTANCE: axi_gpio_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 129 
+WARNING:EDK:4092 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 140 
+WARNING:EDK:4092 - IPNAME: axi_timer, INSTANCE: axi_timer_0 - Pre-Production
+   version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 148 
+WARNING:EDK:4092 - IPNAME: chipscope_axi_monitor, INSTANCE:
+   chipscope_axi_monitor_0 - Pre-Production version not verified on hardware for
+   architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 158 
+WARNING:EDK:4092 - IPNAME: chipscope_icon, INSTANCE: chipscope_icon_0 -
+   Pre-Production version not verified on hardware for architecture 'zynq' -
+   /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/
+   system/system.mhs line 166 
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP0_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 300 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP1_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 304 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP2_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 308 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_S_AXI_HP3_HIGHADDR value to 0x1FFFFFFF -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 312 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_NUM_F2P_INTR_INPUTS value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 319 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to zynq -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 81 
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for BURST parameters equal to 8
+AXI4 or AXI4-Lite Monitor Instantiated
+Setting port widths for LOCK parameters equal to 1
+
+Computing clock values...
+INFO:EDK:1432 - Frequency for Top-Level Input Clock
+   'processing_system7_0_PS_CLK' is not specified. Clock DRCs will not be
+   performed for IPs connected to that clock port, unless they are connected
+   through the clock generator IP. 
+
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - INFO: DDR Base and High address in current configuration is
+   0x00000000 and 0x1FFFFFFF respectively. 
+INFO:EDK - INFO: You can modify the DDR address range accessed by Programmable
+   Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a
+   master on processing_system7 AXI slave interfaces, please use the top half of
+   the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For
+   all other master, any subset of the DDR address can be used. See Xilinx
+   Answer 47167 for more information. 
+Address Map for Processor processing_system7_0
+  (0x41200000-0x4120ffff) axi_gpio_0	axi_interconnect_1
+  (0x42800000-0x4280ffff) axi_timer_0	axi_interconnect_1
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 2
+slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4180 - PORT: tdi_in, CONNECTOR: bscan_tdi - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 101 
+WARNING:EDK:4180 - PORT: reset_in, CONNECTOR: bscan_reset - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 102 
+WARNING:EDK:4180 - PORT: shift_in, CONNECTOR: bscan_shift - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 103 
+WARNING:EDK:4180 - PORT: update_in, CONNECTOR: bscan_update - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 104 
+WARNING:EDK:4180 - PORT: sel_in, CONNECTOR: bscan_sel1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 105 
+WARNING:EDK:4180 - PORT: drck_in, CONNECTOR: bscan_drck1 - No driver found. Port
+   will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 106 
+WARNING:EDK:4180 - PORT: capture_in, CONNECTOR: bscan_capture - No driver found.
+   Port will be driven to GND -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 107 
+WARNING:EDK:4181 - PORT: tdo_out, CONNECTOR: bscan_tdo1 - floating connection -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_icon_v1_
+   06_a/data/chipscope_icon_v2_1_0.mpd line 108 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK1_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 351 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK2_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 352 
+INFO:EDK:4130 - IPNAME: processing_system7, INSTANCE:processing_system7_0 - tcl
+   is overriding PARAMETER C_FCLK_CLK3_BUF value to FALSE -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/processing_system7
+   _v4_03_a/data/processing_system7_v2_1_0.mpd line 353 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v
+   1_06_a/data/axi_interconnect_v2_1_0.mpd line 149 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXRBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXRBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 94 
+chipscope_axi_monitor_0 is connected to instance: axi_gpio_0
+Bus Name is: S_AXI 
+ISSUING nor ACCEPTANCE Parameter Not Found
+The value of MAXWBURSTS is set to 2
+INFO:EDK:4130 - IPNAME: chipscope_axi_monitor, INSTANCE:chipscope_axi_monitor_0
+   - tcl is overriding PARAMETER C_MON_AXI_PC_MAXWBURST value to 2 -
+   /opt/Xilinx/14.5/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/chipscope_axi_moni
+   tor_v3_05_a/data/chipscope_axi_monitor_v2_1_0.mpd line 95 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+ZynqConfig: Terminated for tcl mode
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+ZynqConfig: Terminated for tcl mode
+Chipscope Integrate Controller, instance 'chipscope_icon', exists in System 
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+ZynqConfig: Terminated for tcl mode
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_1.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:chipscope_axi_monitor INSTANCE:chipscope_axi_monitor_0 -
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs line 158 - Copying (BBD-specified) netlist files.
+IPNAME:chipscope_icon INSTANCE:chipscope_icon_0 -
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs line 166 - Copying (BBD-specified) netlist files.
+
+Managing cache ...
+
+Elaborating instances ...
+IPNAME:chipscope_axi_monitor INSTANCE:chipscope_axi_monitor_0 -
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/system.mhs line 158 - elaborating IP
+Created elaborate directory
+hdl/elaborate/chipscope_axi_monitor_0_v3_05_a/synhdl/vhdl/
+Generating ChipScope core: chipscope_axi_monitor_0 ...
+ChipScope Core Generator command: coregen   -b
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/implementation/chipscope_axi_monitor_0.xco
+Release 14.5 - Xilinx CORE Generator P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+All runtime messages will be recorded in
+/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/sys
+tem/implementation/chipscope_axi_monitor_0_wrapper/coregen.log
+Updating project device from '7z020' to 'xc7z020'.
+Wrote CGP file for project 'coregen'.
+Resolving generic values...
+Finished resolving generic values.
+Generating IP...
+Configuring files for chipscope_axi_monitor_0 root...
+Gathering HDL files for chipscope_axi_monitor_0 root...
+Creating XST project for chipscope_axi_monitor_0...
+Creating XST script file for chipscope_axi_monitor_0...
+Creating XST instantiation file for chipscope_axi_monitor_0...
+Running XST for chipscope_axi_monitor_0...
+XST: HDL Parsing

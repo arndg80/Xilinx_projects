@@ -1,0 +1,8 @@
+the_ROM_image:
+{
+	[bootloader]/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_5p2/zynq_fsbl_0/Debug/zynq_fsbl_0.elf
+	/mnt/hgfs/Drive_E/Xilinx_downloads/ZedBoard_CTT_v14.4_130322/u-boot.elf
+	[offset = 0x100000]/mnt/hgfs/Drive_E/Xilinx_downloads/ZedBoard_CTT_v14.4_130322/zImage.bin
+	[offset = 0x3c0000]/mnt/hgfs/Drive_E/Xilinx_downloads/ZedBoard_CTT_v14.4_130322/devicetree.dtb
+	[offset = 0x400000]/mnt/hgfs/Drive_E/Xilinx_downloads/ZedBoard_CTT_v14.4_130322/ramdisk8M.image.gz
+}

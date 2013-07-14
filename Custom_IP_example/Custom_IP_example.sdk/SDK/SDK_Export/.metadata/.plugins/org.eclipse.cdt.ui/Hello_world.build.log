@@ -1,0 +1,33 @@
+23:27:45 **** Build of configuration Debug for project Hello_world ****
+make all 
+make: Warning: File `objects.mk' has modification time 8.1e+04 s in the future
+Building file: ../src/memory_config_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+Finished building: ../src/memory_config_g.c
+ 
+Building file: ../src/memorytest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+Finished building: ../src/memorytest.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Hello_world.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hello_world.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29420	   1136	  21604	  52160	   cbc0	Hello_world.elf
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Finished building: Hello_world.elf.size
+ 
+
+23:27:49 Build Finished (took 3s.384ms)
+

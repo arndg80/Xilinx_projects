@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:11:23 MDT 2013
+# Start of session at: Sun Jun 23 22:44:33 2013
+# Process ID: 14955
+# Log file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.log
+# Journal file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+save_project_as project_1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/project_1 -force
+close_project
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+save_project_as Chapter_3p1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1 -force
+close_project
+open_project /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/Chapter_2p1.ppr
+save_project_as Chapter_3p1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1 -force
+update_compile_order -fileset sim_1
+make_wrapper -files [get_files /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/sources_1/edk/system/system.xmp] -top -fileset [get_filesets sources_1] -import
+close [ open /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/constrs_1/new/system.ucf w ]
+add_files -fileset constrs_1 /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_3p1/Chapter_3p1.srcs/constrs_1/new/system.ucf
+reset_run impl_1
+launch_runs synth_1

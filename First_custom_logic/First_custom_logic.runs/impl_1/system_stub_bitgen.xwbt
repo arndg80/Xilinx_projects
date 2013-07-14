@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=/mnt/hgfs/Drive_E/Xilinx_projects/First_custom_logic/First_custom_logic.runs/impl_1/system_stub_routed.ncd
+OUTFILE=/mnt/hgfs/Drive_E/Xilinx_projects/First_custom_logic/First_custom_logic.runs/impl_1/system_stub.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=/mnt/hgfs/Drive_E/Xilinx_projects/First_custom_logic/First_custom_logic.runs/impl_1
+LICENSE=WebPack
+USER_INFO=210772622_1777493398_210563840_903

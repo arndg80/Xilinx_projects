@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:11:23 MDT 2013
+# Start of session at: Fri Jun 21 23:45:44 2013
+# Process ID: 18827
+# Log file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.log
+# Journal file: /mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Fri Jun 21 23:47:56 2013...
+INFO: [Common 17-83] Releasing license: PlanAhead

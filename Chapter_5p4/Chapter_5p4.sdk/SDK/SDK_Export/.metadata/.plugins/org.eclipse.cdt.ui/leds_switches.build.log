@@ -1,0 +1,20 @@
+20:07:23 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../src/leds_switches.c:30:25: warning: variable 'switches' set but not used [-Wunused-but-set-variable]
+../src/leds_switches.c:29:25: warning: variable 'gpio' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 
+
+20:07:25 Build Finished (took 2s.41ms)
+

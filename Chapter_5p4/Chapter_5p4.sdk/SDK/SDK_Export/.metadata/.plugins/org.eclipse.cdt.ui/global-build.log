@@ -1,0 +1,227 @@
+
+**** Build of configuration Debug for project leds_switches ****
+
+Nothing to build for project leds_switches
+21:23:05 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../leds_switches.c
+Invoking: ARM Linux gcc compiler
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [leds_switches.o] Error 127
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"leds_switches.d" -MT"leds_switches.d" -o "leds_switches.o" "../leds_switches.c"
+21:57:42 **** Clean-only build of configuration Debug for project leds_switches ****
+make clean 
+rm -rf  ./leds_switches.o  ./leds_switches.d  leds_switches.elf.size  leds_switches.elf
+ 
+21:57:43 **** Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"leds_switches.d" -MT"leds_switches.d" -o "leds_switches.o" "../leds_switches.c"
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [leds_switches.o] Error 127
+21:58:20 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [src/leds_switches.o] Error 127
+21:58:31 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [src/leds_switches.o] Error 127
+22:04:44 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"   
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [leds_switches.elf] Error 127
+22:05:29 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [src/leds_switches.o] Error 127
+22:09:44 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c:24:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/leds_switches.o] Error 1
+22:12:12 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c:24:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/leds_switches.o] Error 1
+22:29:05 **** Clean-only build of configuration Debug for project leds_switches ****
+make clean 
+rm -rf  ./src/leds_switches.o  ./src/leds_switches.d  leds_switches.elf
+ 
+22:29:06 **** Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c:24:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/leds_switches.o] Error 1
+22:37:51 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c:24:22: fatal error: sys/mman.h: No such file or directory
+compilation terminated.
+make: *** [src/leds_switches.o] Error 1
+22:38:43 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+make: *** [src/leds_switches.o] Error 127
+22:38:49 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+make: *** [src/leds_switches.o] Error 127
+22:45:14 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 
+22:53:08 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+23:27:15 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+23:35:19 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+15:25:47 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+15:29:06 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+15:29:56 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+15:30:32 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:38:51 **** Clean-only build of configuration Debug for project leds_switches ****
+make clean 
+rm -rf  ./src/leds_switches.o  ./src/leds_switches.d  leds_switches.elf
+ 
+16:38:53 **** Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 
+16:39:09 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:41:52 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:45:30 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:49:52 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 
+16:51:20 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:53:10 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../src/leds_switches.c:30:25: warning: variable 'switches' set but not used [-Wunused-but-set-variable]
+../src/leds_switches.c:29:25: warning: variable 'gpio' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 
+16:53:24 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+16:54:36 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Nothing to be done for `all'.
+17:41:17 **** Incremental Build of configuration Debug for project leds_switches ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 8.9e+04 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+20:07:23 **** Auto Build of configuration Debug for project leds_switches ****
+make all 
+Building file: ../src/leds_switches.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/leds_switches.d" -MT"src/leds_switches.d" -o "src/leds_switches.o" "../src/leds_switches.c"
+../src/leds_switches.c: In function 'main':
+../src/leds_switches.c:39:3: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+../src/leds_switches.c:39:3: warning: incompatible implicit declaration of built-in function 'exit' [enabled by default]
+../src/leds_switches.c:30:25: warning: variable 'switches' set but not used [-Wunused-but-set-variable]
+../src/leds_switches.c:29:25: warning: variable 'gpio' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/leds_switches.c
+ 
+Building target: leds_switches.elf
+Invoking: ARM Linux gcc linker
+arm-xilinx-linux-gnueabi-gcc  -o "leds_switches.elf"  ./src/leds_switches.o   
+Finished building target: leds_switches.elf
+ 

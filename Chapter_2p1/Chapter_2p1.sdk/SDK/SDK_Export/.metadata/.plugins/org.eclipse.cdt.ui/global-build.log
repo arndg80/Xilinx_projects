@@ -1,0 +1,50 @@
+18:00:11 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Warning: File `src/subdir.mk' has modification time 45 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+21:09:02 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:09:52 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:30:15 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:32:20 **** Auto Build of configuration Debug for project Hello_world ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Hello_world.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hello_world.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22660	   1096	  29780	  53536	   d120	Hello_world.elf
+Finished building: Hello_world.elf.size
+ 
+21:32:54 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:33:05 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:33:45 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:34:45 **** Incremental Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.
+21:44:04 **** Build of project Hello_world_bsp ****
+make -k all 
+Finished building libraries
+21:44:06 **** Build of configuration Debug for project Hello_world ****
+make all 
+make: Nothing to be done for `all'.

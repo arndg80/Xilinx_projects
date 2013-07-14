@@ -1,0 +1,8 @@
+Release 14.5 Drc P.58f (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Wed Jul  3 21:44:35 2013
+
+drc -z system_stub_routed.ncd system_stub.pcf
+
+DRC detected 0 errors and 0 warnings.

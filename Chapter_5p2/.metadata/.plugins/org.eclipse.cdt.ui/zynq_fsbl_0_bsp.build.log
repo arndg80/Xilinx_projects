@@ -1,0 +1,85 @@
+00:55:56 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+make: Warning: File `libgen.options' has modification time 5.2e+04 s in the future
+libgen -hw ../ZC702_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ZC702_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: Warning: File `config.make' has modification time 5.2e+04 s in the future
+gmake[2]: Warning: File `../config.make' has modification time 5.2e+04 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling xadc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+gmake[1]: Warning: File `config.make' has modification time 5.2e+04 s in the future
+Compiling standalone
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xcanps_g.c' has modification time 5.2e+04 s in the future
+Compiling canps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xdevcfg_g.c' has modification time 5.2e+04 s in the future
+Compiling devcfg
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xdmaps_g.c' has modification time 5.2e+04 s in the future
+Compiling dmaps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xemacps_g.c' has modification time 5.2e+04 s in the future
+Compiling emacps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xgpiops_g.c' has modification time 5.2e+04 s in the future
+Compiling gpiops
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xiicps_g.c' has modification time 5.2e+04 s in the future
+Compiling iicps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xqspips_g.c' has modification time 5.2e+04 s in the future
+Compiling qspips
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscugic_g.c' has modification time 5.2e+04 s in the future
+Compiling scugic
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscutimer_g.c' has modification time 5.2e+04 s in the future
+Compiling scutimer
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscuwdt_g.c' has modification time 5.2e+04 s in the future
+Compiling scuwdt
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xttcps_g.c' has modification time 5.2e+04 s in the future
+Compiling ttcps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xuartps_g.c' has modification time 5.2e+04 s in the future
+Compiling uartps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xusbps_g.c' has modification time 5.2e+04 s in the future
+Compiling usbps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xwdtps_g.c' has modification time 5.2e+04 s in the future
+Compiling wdtps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+00:57:17 Build Finished (took 1m:20s.330ms)
+

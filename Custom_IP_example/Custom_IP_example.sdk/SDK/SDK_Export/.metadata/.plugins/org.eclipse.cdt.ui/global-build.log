@@ -1,0 +1,641 @@
+23:26:20 **** Build of project Hello_world_bsp ****
+make -k all 
+make: Warning: File `libgen.options' has modification time 8.1e+04 s in the future
+libgen -hw ../system_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: Warning: File `config.make' has modification time 8.1e+04 s in the future
+gmake[2]: Warning: File `../config.make' has modification time 8.1e+04 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+gmake[1]: Warning: File `config.make' has modification time 8.1e+04 s in the future
+Compiling standalone
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Compiling gpio
+gmake[1]: Warning: File `xdevcfg_g.c' has modification time 8.1e+04 s in the future
+Compiling devcfg
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xdmaps_g.c' has modification time 8.1e+04 s in the future
+Compiling dmaps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xemacps_g.c' has modification time 8.1e+04 s in the future
+Compiling emacps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xgpiops_g.c' has modification time 8.1e+04 s in the future
+Compiling gpiops
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xqspips_g.c' has modification time 8.1e+04 s in the future
+Compiling qspips
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscugic_g.c' has modification time 8.1e+04 s in the future
+Compiling scugic
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscutimer_g.c' has modification time 8.1e+04 s in the future
+Compiling scutimer
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscuwdt_g.c' has modification time 8.1e+04 s in the future
+Compiling scuwdt
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xttcps_g.c' has modification time 8e+04 s in the future
+Compiling ttcps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xuartps_g.c' has modification time 8e+04 s in the future
+Compiling uartps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xusbps_g.c' has modification time 8e+04 s in the future
+Compiling usbps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+make: warning:  Clock skew detected.  Your build may be incomplete.
+23:27:45 **** Build of configuration Debug for project Hello_world ****
+make all 
+make: Warning: File `objects.mk' has modification time 8.1e+04 s in the future
+Building file: ../src/memory_config_g.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memory_config_g.d" -MT"src/memory_config_g.d" -o "src/memory_config_g.o" "../src/memory_config_g.c"
+Finished building: ../src/memory_config_g.c
+ 
+Building file: ../src/memorytest.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/memorytest.d" -MT"src/memorytest.d" -o "src/memorytest.o" "../src/memorytest.c"
+Finished building: ../src/memorytest.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Hello_world.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/memory_config_g.o ./src/memorytest.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hello_world.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29420	   1136	  21604	  52160	   cbc0	Hello_world.elf
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Finished building: Hello_world.elf.size
+ 
+22:01:58 **** Build of project Hallo_welt_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+22:03:35 **** Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22660	   1096	  29780	  53536	   d120	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+22:06:41 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+01:00:20 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Warning: File `src/platform.d' has modification time 5.1e+05 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+01:06:29 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Warning: File `src/platform.d' has modification time 5.1e+05 s in the future
+make: Nothing to be done for `all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+14:58:11 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+15:01:13 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:42:5: error: 'data' undeclared (first use in this function)
+../src/helloworld.c:42:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:42:14: error: 'u32' undeclared (first use in this function)
+../src/helloworld.c:42:19: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+15:02:22 **** Clean-only build of configuration Debug for project Hallo_welt ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Hallo_welt.elf.size  Hallo_welt.elf
+ 
+15:02:22 **** Clean-only build of project Hallo_welt_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+15:02:27 **** Build of project Hallo_welt_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+15:04:15 **** Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:42:5: error: 'data' undeclared (first use in this function)
+../src/helloworld.c:42:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:42:14: error: 'u32' undeclared (first use in this function)
+../src/helloworld.c:42:19: error: expected expression before ')' token
+make: *** [src/helloworld.o] Error 1
+15:18:40 **** Clean-only build of configuration Debug for project Hallo_welt ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Hallo_welt.elf.size  Hallo_welt.elf
+ 
+15:18:41 **** Clean-only build of project Hallo_welt_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+15:18:44 **** Build of project Hallo_welt_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: Warning: File `config.make' has modification time 17 s in the future
+gmake[2]: Warning: File `../config.make' has modification time 17 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+gmake[1]: Warning: File `config.make' has modification time 5.6 s in the future
+Compiling standalone
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+15:20:42 **** Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Warning: File `objects.mk' has modification time 23 s in the future
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:43:12: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:46:5: warning: statement with no effect [-Wunused-value]
+../src/helloworld.c:48:5: error: expected ';' before 'return'
+../src/helloworld.c:49:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+13:36:26 **** Clean-only build of configuration Debug for project Hallo_welt ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Hallo_welt.elf.size  Hallo_welt.elf
+ 
+13:36:26 **** Clean-only build of project Hallo_welt_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+13:36:29 **** Build of project Hallo_welt_bsp ****
+make -k all 
+libgen -hw ../system_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -pe ps7_cortexa9_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling common
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+Compiling xadc
+Compiling standalone
+Compiling gpio
+Compiling devcfg
+Compiling dmaps
+Compiling emacps
+Compiling gpiops
+Compiling qspips
+Compiling scugic
+Compiling scutimer
+Compiling scuwdt
+Compiling ttcps
+Compiling uartps
+Compiling usbps
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+13:38:03 **** Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62556	   2264	  29868	  94688	  171e0	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+13:47:36 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:41:6: error: conflicting types for 'print'
+../../Hallo_welt_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: previous declaration of 'print' was here
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:50:10: error: redefinition of 'choice'
+../src/helloworld.c:48:10: note: previous definition of 'choice' was here
+../src/helloworld.c:50:10: warning: unused variable 'choice' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+13:47:48 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:41:6: error: conflicting types for 'print'
+../../Hallo_welt_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: previous declaration of 'print' was here
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:48:10: warning: variable 'choice' set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld.o] Error 1
+13:49:05 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:10: warning: variable 'choice' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62600	   2264	  29868	  94732	  1720c	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+13:49:42 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:48:10: warning: variable 'choice' set but not used [-Wunused-but-set-variable]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62624	   2264	  29868	  94756	  17224	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+13:51:12 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+14:03:08 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:79:5: error: expected identifier or '(' before 'return'
+../src/helloworld.c:80:1: error: expected identifier or '(' before '}' token
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:5: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+14:03:22 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:53:5: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:53:5: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:69:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:69:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:5: error: expected identifier or '(' before 'return'
+../src/helloworld.c:80:1: error: expected identifier or '(' before '}' token
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:77:5: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+14:03:36 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c: At top level:
+../src/helloworld.c:78:5: error: expected identifier or '(' before 'return'
+../src/helloworld.c:79:1: error: expected identifier or '(' before '}' token
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:5: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+14:04:11 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62792	   2264	  29868	  94924	  172cc	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+14:04:49 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+14:15:22 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62856	   2264	  29868	  94988	  1730c	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+14:15:31 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+14:16:07 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62864	   2264	  29868	  94996	  17314	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+14:16:18 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.
+14:17:38 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:68:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62864	   2264	  29868	  94996	  17314	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+14:18:19 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:50:6: error: 'choice' undeclared (first use in this function)
+../src/helloworld.c:50:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:61:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+make: *** [src/helloworld.o] Error 1
+14:18:35 **** Auto Build of configuration Debug for project Hallo_welt ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../Hallo_welt_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+../src/helloworld.c:62:8: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32' [-Wformat]
+Finished building: ../src/helloworld.c
+ 
+Building target: Hallo_welt.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hallo_welt_bsp/ps7_cortexa9_0/lib -o "Hallo_welt.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Hallo_welt.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size Hallo_welt.elf  |tee "Hallo_welt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62656	   2264	  29868	  94788	  17244	Hallo_welt.elf
+Finished building: Hallo_welt.elf.size
+ 
+14:18:41 **** Incremental Build of configuration Debug for project Hallo_welt ****
+make all 
+make: Nothing to be done for `all'.

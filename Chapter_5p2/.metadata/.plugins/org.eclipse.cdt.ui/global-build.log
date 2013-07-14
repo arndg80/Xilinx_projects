@@ -1,0 +1,175 @@
+00:45:43 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+make: Warning: File `objects.mk' has modification time 5.2e+04 s in the future
+Building file: ../src/helloworld.c
+/bin/sh: arm-xilinx-linux-gnueabi-gcc: command not found
+Invoking: ARM Linux gcc compiler
+make: *** [src/helloworld.o] Error 127
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+00:55:56 **** Build of project zynq_fsbl_0_bsp ****
+make -k all 
+make: Warning: File `libgen.options' has modification time 5.2e+04 s in the future
+libgen -hw ../ZC702_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.5 Build EDK_P.58f
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ZC702_hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+gmake[1]: Warning: File `config.make' has modification time 5.2e+04 s in the future
+gmake[2]: Warning: File `../config.make' has modification time 5.2e+04 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+
+Running libs - 'gmake -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Compiling xadc
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+gmake[1]: Warning: File `config.make' has modification time 5.2e+04 s in the future
+Compiling standalone
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xcanps_g.c' has modification time 5.2e+04 s in the future
+Compiling canps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xdevcfg_g.c' has modification time 5.2e+04 s in the future
+Compiling devcfg
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xdmaps_g.c' has modification time 5.2e+04 s in the future
+Compiling dmaps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xemacps_g.c' has modification time 5.2e+04 s in the future
+Compiling emacps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xgpiops_g.c' has modification time 5.2e+04 s in the future
+Compiling gpiops
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xiicps_g.c' has modification time 5.2e+04 s in the future
+Compiling iicps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xqspips_g.c' has modification time 5.2e+04 s in the future
+Compiling qspips
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscugic_g.c' has modification time 5.2e+04 s in the future
+Compiling scugic
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscutimer_g.c' has modification time 5.2e+04 s in the future
+Compiling scutimer
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xscuwdt_g.c' has modification time 5.2e+04 s in the future
+Compiling scuwdt
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xttcps_g.c' has modification time 5.2e+04 s in the future
+Compiling ttcps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xuartps_g.c' has modification time 5.2e+04 s in the future
+Compiling uartps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xusbps_g.c' has modification time 5.2e+04 s in the future
+Compiling usbps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[1]: Warning: File `xwdtps_g.c' has modification time 5.2e+04 s in the future
+Compiling wdtps
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+Compiling cpu_cortexa9
+Running execs_generate.
+Finished building libraries
+make: warning:  Clock skew detected.  Your build may be incomplete.
+00:57:19 **** Build of configuration Debug for project zynq_fsbl_0 ****
+make all 
+make: Warning: File `objects.mk' has modification time 5.2e+04 s in the future
+Building file: ../src/ddr_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+Finished building: ../src/ddr_init.c
+ 
+Building file: ../src/ff.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+Finished building: ../src/ff.c
+ 
+Building file: ../src/fsbl_handoff.S
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+Finished building: ../src/fsbl_handoff.S
+ 
+Building file: ../src/fsbl_hooks.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+Finished building: ../src/fsbl_hooks.c
+ 
+Building file: ../src/image_mover.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+Finished building: ../src/image_mover.c
+ 
+Building file: ../src/main.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/mmc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+Finished building: ../src/mmc.c
+ 
+Building file: ../src/nand.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+Finished building: ../src/nand.c
+ 
+Building file: ../src/nor.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+Finished building: ../src/nor.c
+ 
+Building file: ../src/pcap.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+Finished building: ../src/pcap.c
+ 
+Building file: ../src/ps7_init.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+Finished building: ../src/ps7_init.c
+ 
+Building file: ../src/qspi.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+Finished building: ../src/qspi.c
+ 
+Building file: ../src/rsa.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+Finished building: ../src/rsa.c
+ 
+Building file: ../src/sd.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../zynq_fsbl_0_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+Finished building: ../src/sd.c
+ 
+Building target: zynq_fsbl_0.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -L"/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_5p2/zynq_fsbl_0/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_0_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl_0.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: zynq_fsbl_0.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size zynq_fsbl_0.elf  |tee "zynq_fsbl_0.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51528	   4368	  64176	 120072	  1d508	zynq_fsbl_0.elf
+Finished building: zynq_fsbl_0.elf.size
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.

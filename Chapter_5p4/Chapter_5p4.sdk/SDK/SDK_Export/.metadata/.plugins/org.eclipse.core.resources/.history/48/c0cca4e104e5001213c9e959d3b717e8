@@ -1,0 +1,59 @@
+/* THIS IS THE FILE THAT writes to LEDs and reads from switches..linux 
+ * Copyright (c) 2012 Xilinx, Inc.  All rights reserved.
+ *
+ * Xilinx, Inc.
+ * XILINX IS PROVIDING THIS DESIGN, CODE, OR INFORMATION "AS IS" AS A
+ * COURTESY TO YOU.  BY PROVIDING THIS DESIGN, CODE, OR INFORMATION AS
+ * ONE POSSIBLE   IMPLEMENTATION OF THIS FEATURE, APPLICATION OR
+ * STANDARD, XILINX IS MAKING NO REPRESENTATION THAT THIS IMPLEMENTATION
+ * IS FREE FROM ANY CLAIMS OF INFRINGEMENT, AND YOU ARE RESPONSIBLE
+ * FOR OBTAINING ANY RIGHTS YOU MAY REQUIRE FOR YOUR IMPLEMENTATION.
+ * XILINX EXPRESSLY DISCLAIMS ANY WARRANTY WHATSOEVER WITH RESPECT TO
+ * THE ADEQUACY OF THE IMPLEMENTATION, INCLUDING BUT NOT LIMITED TO
+ * ANY WARRANTIES OR REPRESENTATIONS THAT THIS IMPLEMENTATION IS FREE
+ * FROM CLAIMS OF INFRINGEMENT, IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ */
+
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/mman.h>
+
+
+int main()
+{
+	volatile unsigned int *gpio;
+	volatile unsigned int *switches;
+
+	int gpio_val = 0;
+	int switches_val = 0;
+
+	int fd = open("/dev/mem", O_RDWR|O_SYNC);
+
+	if (fd < 0) {
+		printf("Error...");
+		exit (1);
+	}
+
+	gpio = mmap(0, getpagesize(), PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0x41220000);
+
+	switches = mmap(0, getpagesize(), PROT_READ|PROT_WRITE, MAP_SHARED, fd, 0x41200000);
+
+	*gpio = 0xaa;
+
+	gpio_val = *gpio;
+
+	switches_val = *switches;
+
+	printf("GPIO Value is %d\r\n", gpio_val);
+	printf("Switches Value is %d\r\n", switches_val);
+
+
+    printf("Hello World\n");
+
+    return 0;
+}

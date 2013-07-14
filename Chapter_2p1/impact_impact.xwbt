@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/impact.xsl
+OUTFILE=/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/mnt/hgfs/Drive_E/Xilinx_projects/Chapter_2p1
+LICENSE=iMPACT
+USER_INFO=iMPACT

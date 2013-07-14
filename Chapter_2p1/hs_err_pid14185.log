@@ -1,0 +1,1004 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007ff651feb8a2, pid=14185, tid=140695090222848
+#
+# JRE version: 6.0_21-b06
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0-b16 mixed mode linux-amd64 )
+# Problematic frame:
+# V  [libjvm.so+0x1ed8a2]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007ff64c08c800):  VMThread [stack: 0x00007ff620cfd000,0x00007ff620dfe000] [id=14191]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x00000000000000b0
+
+Registers:
+RAX=0x0000000000000001, RBX=0x00007ff600000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x00007ff620dfc650, RBP=0x00007ff620dfc650, RSI=0x00007ff600000000, RDI=0x00007ff600000020
+R8 =0x0000000000000001, R9 =0x0000000000000001, R10=0x00007ff652739430, R11=0x0000000000000000
+R12=0x00007ff600000020, R13=0x00007ff621c7d008, R14=0x0000000000000021, R15=0x00007ff621c7cec8
+RIP=0x00007ff651feb8a2, EFL=0x0000000000010246, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ff620dfc650)
+0x00007ff620dfc650:   00007ff620dfc6a0 00007ff6520e9f51
+0x00007ff620dfc660:   00007ff620dfc66f 01007ff620dfc920
+0x00007ff620dfc670:   0000000000000003 00007ff6324b4b30
+0x00007ff620dfc680:   00007ff620dfc6f0 0000000000000000
+0x00007ff620dfc690:   00007ff620dfc700 00007ff64c0169a0
+0x00007ff620dfc6a0:   00007ff620dfc6c0 00007ff65238e5e3
+0x00007ff620dfc6b0:   00007ff620dfc6c0 00007ff652872960
+0x00007ff620dfc6c0:   00007ff620dfc760 00007ff652434964
+0x00007ff620dfc6d0:   00007ff652743810 00007fff125ba900
+0x00007ff620dfc6e0:   00007ff652872960 0000000000000001
+0x00007ff620dfc6f0:   0000000000000001 00007ff64c08a601
+0x00007ff620dfc700:   00007ff64c010100 0000000000000000
+0x00007ff620dfc710:   00007ff64c08be10 00007ff64c04bd00
+0x00007ff620dfc720:   00007ff620dfc740 00007ff64c0008c0
+0x00007ff620dfc730:   00007ff64c08a560 00007ff64c08a610
+0x00007ff620dfc740:   000000000016c000 00007ff652749348
+0x00007ff620dfc750:   00007ff65274b750 0000000000000000
+0x00007ff620dfc760:   00007ff620dfc990 00007ff652433859
+0x00007ff620dfc770:   000000000029a2b8 0000000002b70ab8
+0x00007ff620dfc780:   00007ff620dfc940 00007ff620dfc850
+0x00007ff620dfc790:   00007ff620dfc890 00007ff620dfc8c0
+0x00007ff620dfc7a0:   00007ff620dfc920 0000000002e0ad70
+0x00007ff620dfc7b0:   00007ff620dfc950 00007ff64c0180b0
+0x00007ff620dfc7c0:   0000000000020000 0000000002b70ab8
+0x00007ff620dfc7d0:   0000000004861100 0000000002b90ab8
+0x00007ff620dfc7e0:   00007ff620dfc880 00007ff620dfc8c0
+0x00007ff620dfc7f0:   00007ff620dfc8f0 00007ff620dfc950
+0x00007ff620dfc800:   00007ff64c018690 00007ff64c016790
+0x00007ff620dfc810:   00007ff64c016700 00007ff64c0180b0
+0x00007ff620dfc820:   000000004c08aec0 00007ff64c0163d0
+0x00007ff620dfc830:   00007ff652753500 00007ff600000004
+0x00007ff620dfc840:   00007ff64c08a830 0000000000000004 
+
+Instructions: (pc=0x00007ff651feb8a2)
+0x00007ff651feb892:   83 87 00 8b 56 08 41 8b 48 08 48 d3 e2 49 03 10
+0x00007ff651feb8a2:   48 8b 8a b0 00 00 00 ba 01 00 00 00 83 e1 07 48 
+
+Stack: [0x00007ff620cfd000,0x00007ff620dfe000],  sp=0x00007ff620dfc650,  free space=3fd0000000000000018k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x1ed8a2]
+V  [libjvm.so+0x2ebf51]
+V  [libjvm.so+0x5905e3]
+V  [libjvm.so+0x636964]
+V  [libjvm.so+0x635859]
+V  [libjvm.so+0x635394]
+V  [libjvm.so+0x7320b7]
+V  [libjvm.so+0x73ecfa]
+V  [libjvm.so+0x73e312]
+V  [libjvm.so+0x73e583]
+V  [libjvm.so+0x73e08e]
+V  [libjvm.so+0x5f80df]
+
+VM_Operation (0x00007ff5e0e397d0): ParallelGCSystemGC, mode: safepoint, requested by thread 0x0000000041501800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007ff5cc006000 JavaThread "Worker-11" [_thread_blocked, id=14280, stack(0x00007ff5e31cd000,0x00007ff5e32ce000)]
+  0x00007ff5b8113000 JavaThread "pool-1-thread-1" [_thread_blocked, id=14265, stack(0x00007ff594bb1000,0x00007ff594cb2000)]
+  0x00007ff5b8095800 JavaThread "Thread-12" daemon [_thread_blocked, id=14261, stack(0x00007ff594cb7000,0x00007ff594db8000)]
+  0x00007ff5b8094800 JavaThread "Thread-11" daemon [_thread_in_native, id=14260, stack(0x00007ff594db8000,0x00007ff594eb9000)]
+  0x00007ff5b8090000 JavaThread "Process monitor" daemon [_thread_blocked, id=14255, stack(0x00007ff594eb9000,0x00007ff594fba000)]
+  0x00007ff5b808f800 JavaThread "Input Stream Monitor" daemon [_thread_blocked, id=14254, stack(0x00007ff594fba000,0x00007ff5950bb000)]
+  0x00007ff5b8087000 JavaThread "Output Stream Monitor" daemon [_thread_in_native, id=14253, stack(0x00007ff597cfb000,0x00007ff597dfc000)]
+  0x00007ff5b8086800 JavaThread "Output Stream Monitor" daemon [_thread_in_native, id=14252, stack(0x00007ff59c0dd000,0x00007ff59c1de000)]
+  0x00007ff5b8085800 JavaThread "Spawner Reaper" daemon [_thread_in_native, id=14250, stack(0x00007ff597bfa000,0x00007ff597cfb000)]
+  0x00007ff5a8008800 JavaThread "TCF Locator DNS Lookup" daemon [_thread_blocked, id=14235, stack(0x00007ff59c1de000,0x00007ff59c2df000)]
+  0x00007ff5a8007000 JavaThread "TCF Locator Timer" daemon [_thread_blocked, id=14234, stack(0x00007ff59c2df000,0x00007ff59c3e0000)]
+  0x00007ff5a8005800 JavaThread "TCF Locator Receiver" daemon [_thread_blocked, id=14233, stack(0x00007ff59c3e0000,0x00007ff59c4e1000)]
+  0x00007ff5c800f800 JavaThread "TCF Event Dispatcher" daemon [_thread_blocked, id=14232, stack(0x00007ff59c4e1000,0x00007ff59c5e2000)]
+  0x00007ff64c0ef800 JavaThread "TCF Timer Dispatcher" daemon [_thread_blocked, id=14231, stack(0x00007ff5e0004000,0x00007ff5e0105000)]
+  0x00007ff5c000c800 JavaThread "[ThreadPool Manager] - Idle Thread" daemon [_thread_blocked, id=14227, stack(0x00007ff5e0b38000,0x00007ff5e0c39000)]
+  0x00007ff598066800 JavaThread "Bundle File Closer" daemon [_thread_blocked, id=14225, stack(0x00007ff5e0c39000,0x00007ff5e0d3a000)]
+  0x0000000041501800 JavaThread "Worker-10" [_thread_blocked, id=14224, stack(0x00007ff5e0d3a000,0x00007ff5e0e3b000)]
+  0x00007ff64ce62000 JavaThread "org.eclipse.cdt.internal.ui.text.CReconciler" daemon [_thread_blocked, id=14215, stack(0x00007ff5e1750000,0x00007ff5e1851000)]
+  0x00007ff64c0f9800 JavaThread "Worker-0" [_thread_blocked, id=14211, stack(0x00007ff5e34d0000,0x00007ff5e35d1000)]
+  0x00007ff5d4087800 JavaThread "Worker-JM" [_thread_blocked, id=14208, stack(0x00007ff5e32ce000,0x00007ff5e33cf000)]
+  0x00007ff5d4073800 JavaThread "[Timer] - Main Queue Handler" daemon [_thread_blocked, id=14207, stack(0x00007ff5e33cf000,0x00007ff5e34d0000)]
+  0x00007ff5d400c800 JavaThread "Framework Event Dispatcher" daemon [_thread_blocked, id=14205, stack(0x00007ff5e35d1000,0x00007ff5e36d2000)]
+  0x00007ff64c33c800 JavaThread "Start Level Event Dispatcher" daemon [_thread_blocked, id=14204, stack(0x00007ff5e36d2000,0x00007ff5e37d3000)]
+  0x00007ff64c249000 JavaThread "State Data Manager" daemon [_thread_blocked, id=14203, stack(0x00007ff5e37d3000,0x00007ff5e38d4000)]
+  0x00007ff64c28c800 JavaThread "Framework Active Thread" [_thread_blocked, id=14202, stack(0x00007ff5e38d4000,0x00007ff5e39d5000)]
+  0x00007ff64c0b7000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=14197, stack(0x00007ff620014000,0x00007ff620115000)]
+  0x00007ff64c0b4800 JavaThread "CompilerThread1" daemon [_thread_blocked, id=14196, stack(0x00007ff620115000,0x00007ff620216000)]
+  0x00007ff64c0b1800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=14195, stack(0x00007ff620216000,0x00007ff620317000)]
+  0x00007ff64c0af800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=14194, stack(0x00007ff620317000,0x00007ff620418000)]
+  0x00007ff64c092800 JavaThread "Finalizer" daemon [_thread_blocked, id=14193, stack(0x00007ff620afb000,0x00007ff620bfc000)]
+  0x00007ff64c090800 JavaThread "Reference Handler" daemon [_thread_blocked, id=14192, stack(0x00007ff620bfc000,0x00007ff620cfd000)]
+  0x00007ff64c008000 JavaThread "main" [_thread_blocked, id=14186, stack(0x00007ff651a01000,0x00007ff651b02000)]
+
+Other Threads:
+=>0x00007ff64c08c800 VMThread [stack: 0x00007ff620cfd000,0x00007ff620dfe000] [id=14191]
+  0x00007ff64c0c1800 WatcherThread [stack: 0x00007ff5f3eff000,0x00007ff5f4000000] [id=14198]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ff64c005050] Threads_lock - owner thread: 0x00007ff64c08c800
+[0x00007ff64c005550] Heap_lock - owner thread: 0x0000000041501800
+
+Heap
+ PSYoungGen      total 107776K, used 128K [0x00007ff641000000, 0x00007ff649000000, 0x00007ff649000000)
+  eden space 84288K, 0% used [0x00007ff641000000,0x00007ff641000000,0x00007ff646250000)
+  from space 23488K, 0% used [0x00007ff647910000,0x00007ff647930000,0x00007ff649000000)
+  to   space 23296K, 0% used [0x00007ff646250000,0x00007ff646250000,0x00007ff647910000)
+ PSOldGen        total 51008K, used 44482K [0x00007ff631000000, 0x00007ff6341d0000, 0x00007ff641000000)
+  object space 51008K, 87% used [0x00007ff631000000,0x00007ff633b70ab8,0x00007ff6341d0000)
+ PSPermGen       total 146432K, used 74116K [0x00007ff621000000, 0x00007ff629f00000, 0x00007ff631000000)
+  object space 146432K, 50% used [0x00007ff621000000,0x00007ff625861100,0x00007ff629f00000)
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 08:01 813630                             /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/bin/java
+40108000-4010a000 rwxp 00008000 08:01 813630                             /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/bin/java
+414ff000-41520000 rwxp 00000000 00:00 0                                  [heap]
+7ff592394000-7ff5924e5000 r-xp 00000000 08:01 919125                     /usr/lib/x86_64-linux-gnu/libxml2.so.2.7.8
+7ff5924e5000-7ff5926e4000 ---p 00151000 08:01 919125                     /usr/lib/x86_64-linux-gnu/libxml2.so.2.7.8
+7ff5926e4000-7ff5926ec000 r-xp 00150000 08:01 919125                     /usr/lib/x86_64-linux-gnu/libxml2.so.2.7.8
+7ff5926ec000-7ff5926ee000 rwxp 00158000 08:01 919125                     /usr/lib/x86_64-linux-gnu/libxml2.so.2.7.8
+7ff5926ee000-7ff5926ef000 rwxp 00000000 00:00 0 
+7ff5926ef000-7ff592726000 r-xp 00000000 08:01 925372                     /usr/lib/x86_64-linux-gnu/libcroco-0.6.so.3.0.1
+7ff592726000-7ff592925000 ---p 00037000 08:01 925372                     /usr/lib/x86_64-linux-gnu/libcroco-0.6.so.3.0.1
+7ff592925000-7ff592928000 r-xp 00036000 08:01 925372                     /usr/lib/x86_64-linux-gnu/libcroco-0.6.so.3.0.1
+7ff592928000-7ff592929000 rwxp 00039000 08:01 925372                     /usr/lib/x86_64-linux-gnu/libcroco-0.6.so.3.0.1
+7ff592929000-7ff59295d000 r-xp 00000000 08:01 925754                     /usr/lib/x86_64-linux-gnu/librsvg-2.so.2.36.1
+7ff59295d000-7ff592b5c000 ---p 00034000 08:01 925754                     /usr/lib/x86_64-linux-gnu/librsvg-2.so.2.36.1
+7ff592b5c000-7ff592b5d000 r-xp 00033000 08:01 925754                     /usr/lib/x86_64-linux-gnu/librsvg-2.so.2.36.1
+7ff592b5d000-7ff592b5e000 rwxp 00034000 08:01 925754                     /usr/lib/x86_64-linux-gnu/librsvg-2.so.2.36.1
+7ff592b5e000-7ff592b60000 r-xp 00000000 08:01 1180576                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+7ff592b60000-7ff592d5f000 ---p 00002000 08:01 1180576                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+7ff592d5f000-7ff592d60000 r-xp 00001000 08:01 1180576                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+7ff592d60000-7ff592d61000 rwxp 00002000 08:01 1180576                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-svg.so
+7ff592d61000-7ff5940dc000 r-xp 00000000 08:01 1725114                    /usr/share/icons/hicolor/icon-theme.cache
+7ff5940dc000-7ff5949c7000 r-xp 00000000 08:01 1710962                    /usr/share/icons/gnome/icon-theme.cache
+7ff5949c7000-7ff594ab0000 r-xp 00000000 08:01 1710900                    /usr/share/icons/Humanity/icon-theme.cache
+7ff594ab0000-7ff594ab3000 ---p 00000000 00:00 0 
+7ff594ab3000-7ff594bb1000 rwxp 00000000 00:00 0 
+7ff594bb1000-7ff594bb4000 ---p 00000000 00:00 0 
+7ff594bb4000-7ff594cb2000 rwxp 00000000 00:00 0                          [stack:14265]
+7ff594cb2000-7ff594cb7000 r-xs 00024000 08:01 410100                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/28/2/.cp/lib/gson-1.6.jar
+7ff594cb7000-7ff594cba000 ---p 00000000 00:00 0 
+7ff594cba000-7ff594db8000 rwxp 00000000 00:00 0                          [stack:14261]
+7ff594db8000-7ff594dbb000 ---p 00000000 00:00 0 
+7ff594dbb000-7ff594eb9000 rwxp 00000000 00:00 0                          [stack:14260]
+7ff594eb9000-7ff594ebc000 ---p 00000000 00:00 0 
+7ff594ebc000-7ff594fba000 rwxp 00000000 00:00 0                          [stack:14255]
+7ff594fba000-7ff594fbd000 ---p 00000000 00:00 0 
+7ff594fbd000-7ff5950bb000 rwxp 00000000 00:00 0                          [stack:14254]
+7ff5950bb000-7ff5950bd000 r-xp 00000000 08:01 3544935                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJTargetManager.so
+7ff5950bd000-7ff5952bc000 ---p 00002000 08:01 3544935                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJTargetManager.so
+7ff5952bc000-7ff5952bd000 rwxp 00001000 08:01 3544935                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJTargetManager.so
+7ff5952bd000-7ff5955f3000 r-xp 00000000 08:01 572811                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2BRAMUtil.so
+7ff5955f3000-7ff5957f3000 ---p 00336000 08:01 572811                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2BRAMUtil.so
+7ff5957f3000-7ff595c4a000 rwxp 00336000 08:01 572811                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2BRAMUtil.so
+7ff595c4a000-7ff595c4b000 rwxp 00000000 00:00 0 
+7ff595c4b000-7ff595f7a000 r-xp 00000000 08:01 533019                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2MEMDataUtil.so
+7ff595f7a000-7ff596179000 ---p 0032f000 08:01 533019                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2MEMDataUtil.so
+7ff596179000-7ff5965d1000 rwxp 0032e000 08:01 533019                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libData2MEMDataUtil.so
+7ff5965d1000-7ff59660e000 r-xp 00000000 08:01 551171                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libBs_Bitstream.so
+7ff59660e000-7ff59680d000 ---p 0003d000 08:01 551171                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libBs_Bitstream.so
+7ff59680d000-7ff596810000 rwxp 0003c000 08:01 551171                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libBs_Bitstream.so
+7ff596810000-7ff59681e000 r-xp 00000000 08:01 532996                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommException.so
+7ff59681e000-7ff596a1d000 ---p 0000e000 08:01 532996                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommException.so
+7ff596a1d000-7ff596a1f000 rwxp 0000d000 08:01 532996                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommException.so
+7ff596a1f000-7ff596aa4000 r-xp 00000000 08:01 551489                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libPersonalityModule.so
+7ff596aa4000-7ff596ca3000 ---p 00085000 08:01 551489                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libPersonalityModule.so
+7ff596ca3000-7ff596ca8000 rwxp 00084000 08:01 551489                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libPersonalityModule.so
+7ff596ca8000-7ff596cb9000 r-xp 00000000 08:01 553633                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libStaticFileParsers.so
+7ff596cb9000-7ff596eb9000 ---p 00011000 08:01 553633                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libStaticFileParsers.so
+7ff596eb9000-7ff596eba000 rwxp 00011000 08:01 553633                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libStaticFileParsers.so
+7ff596eba000-7ff596edf000 r-xp 00000000 08:01 551209                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommUtility.so
+7ff596edf000-7ff5970df000 ---p 00025000 08:01 551209                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommUtility.so
+7ff5970df000-7ff5970e1000 rwxp 00025000 08:01 551209                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseXilCommUtility.so
+7ff5970e1000-7ff59712c000 r-xp 00000000 08:01 532985                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseBsdlParser.so
+7ff59712c000-7ff59732b000 ---p 0004b000 08:01 532985                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseBsdlParser.so
+7ff59732b000-7ff59732d000 rwxp 0004a000 08:01 532985                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseBsdlParser.so
+7ff59732d000-7ff597331000 rwxp 00000000 00:00 0 
+7ff597331000-7ff597362000 r-xp 00000000 08:01 551201                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseUtil.so
+7ff597362000-7ff597561000 ---p 00031000 08:01 551201                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseUtil.so
+7ff597561000-7ff597563000 rwxp 00030000 08:01 551201                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseUtil.so
+7ff597563000-7ff5975d9000 r-xp 00000000 08:01 551195                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseJtag.so
+7ff5975d9000-7ff5977d8000 ---p 00076000 08:01 551195                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseJtag.so
+7ff5977d8000-7ff5977dc000 rwxp 00075000 08:01 551195                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libCseJtag.so
+7ff5977dc000-7ff5977f4000 r-xp 00000000 08:01 3544923                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkDebugDialog.so
+7ff5977f4000-7ff5979f3000 ---p 00018000 08:01 3544923                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkDebugDialog.so
+7ff5979f3000-7ff5979f4000 rwxp 00017000 08:01 3544923                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkDebugDialog.so
+7ff5979f4000-7ff5979fa000 r-xp 00000000 08:01 3544929                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJJTAGSettings.so
+7ff5979fa000-7ff597bf9000 ---p 00006000 08:01 3544929                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJJTAGSettings.so
+7ff597bf9000-7ff597bfa000 rwxp 00005000 08:01 3544929                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJJTAGSettings.so
+7ff597bfa000-7ff597bfd000 ---p 00000000 00:00 0 
+7ff597bfd000-7ff597cfb000 rwxp 00000000 00:00 0                          [stack:14250]
+7ff597cfb000-7ff597cfe000 ---p 00000000 00:00 0 
+7ff597cfe000-7ff597dfc000 rwxp 00000000 00:00 0                          [stack:14253]
+7ff597dfc000-7ff597e00000 r-xp 00000000 08:01 273730                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/68/2/.cp/os/linux/x86_64/libspawner.so
+7ff597e00000-7ff597fff000 ---p 00004000 08:01 273730                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/68/2/.cp/os/linux/x86_64/libspawner.so
+7ff597fff000-7ff598000000 rwxp 00003000 08:01 273730                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/68/2/.cp/os/linux/x86_64/libspawner.so
+7ff598000000-7ff5980e6000 rwxp 00000000 00:00 0 
+7ff5980e6000-7ff59c000000 ---p 00000000 00:00 0 
+7ff59c0dd000-7ff59c0e0000 ---p 00000000 00:00 0 
+7ff59c0e0000-7ff59c1de000 rwxp 00000000 00:00 0                          [stack:14252]
+7ff59c1de000-7ff59c1e1000 ---p 00000000 00:00 0 
+7ff59c1e1000-7ff59c2df000 rwxp 00000000 00:00 0                          [stack:14235]
+7ff59c2df000-7ff59c2e2000 ---p 00000000 00:00 0 
+7ff59c2e2000-7ff59c3e0000 rwxp 00000000 00:00 0                          [stack:14234]
+7ff59c3e0000-7ff59c3e3000 ---p 00000000 00:00 0 
+7ff59c3e3000-7ff59c4e1000 rwxp 00000000 00:00 0                          [stack:14233]
+7ff59c4e1000-7ff59c4e4000 ---p 00000000 00:00 0 
+7ff59c4e4000-7ff59c5e2000 rwxp 00000000 00:00 0                          [stack:14232]
+7ff59c5e2000-7ff59c642000 r-xp 00000000 08:01 3539608                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libUtilC_MessageDispatcher.so
+7ff59c642000-7ff59c842000 ---p 00060000 08:01 3539608                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libUtilC_MessageDispatcher.so
+7ff59c842000-7ff59c846000 rwxp 00060000 08:01 3539608                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libUtilC_MessageDispatcher.so
+7ff59c846000-7ff59c85c000 r-xp 00000000 08:01 3539657                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_zlib-gcc41-mt-p-1_38.so.1.38.0
+7ff59c85c000-7ff59c95b000 ---p 00016000 08:01 3539657                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_zlib-gcc41-mt-p-1_38.so.1.38.0
+7ff59c95b000-7ff59c95c000 rwxp 00015000 08:01 3539657                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_zlib-gcc41-mt-p-1_38.so.1.38.0
+7ff59c95c000-7ff59c960000 r-xp 00000000 08:01 397030                     /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7ff59c960000-7ff59cb5f000 ---p 00004000 08:01 397030                     /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7ff59cb5f000-7ff59cb60000 r-xp 00003000 08:01 397030                     /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7ff59cb60000-7ff59cb61000 rwxp 00004000 08:01 397030                     /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7ff59cb61000-7ff59cb76000 r-xp 00000000 08:01 396944                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ff59cb76000-7ff59cd75000 ---p 00015000 08:01 396944                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ff59cd75000-7ff59cd76000 r-xp 00014000 08:01 396944                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ff59cd76000-7ff59cd77000 rwxp 00015000 08:01 396944                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ff59cd77000-7ff59ce5d000 r-xp 00000000 08:01 3539682                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstdc++.so.6
+7ff59ce5d000-7ff59cf5d000 ---p 000e6000 08:01 3539682                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstdc++.so.6
+7ff59cf5d000-7ff59cf5e000 r-xp 000e6000 08:01 3539682                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstdc++.so.6
+7ff59cf5e000-7ff59cf66000 rwxp 000e7000 08:01 3539682                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstdc++.so.6
+7ff59cf66000-7ff59cf78000 rwxp 00000000 00:00 0 
+7ff59cf78000-7ff59cf9c000 r-xp 00000000 08:01 3544789                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtEdwardXMLDefs.so
+7ff59cf9c000-7ff59d19c000 ---p 00024000 08:01 3544789                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtEdwardXMLDefs.so
+7ff59d19c000-7ff59d19e000 rwxp 00024000 08:01 3544789                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtEdwardXMLDefs.so
+7ff59d19e000-7ff59d1b0000 r-xp 00000000 08:01 3550884                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_date_time-gcc41-mt-p-1_38.so.1.38.0
+7ff59d1b0000-7ff59d2af000 ---p 00012000 08:01 3550884                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_date_time-gcc41-mt-p-1_38.so.1.38.0
+7ff59d2af000-7ff59d2b1000 rwxp 00011000 08:01 3550884                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_date_time-gcc41-mt-p-1_38.so.1.38.0
+7ff59d2b1000-7ff59d2c6000 r-xp 00000000 08:01 3550885                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_thread-gcc41-mt-p-1_38.so.1.38.0
+7ff59d2c6000-7ff59d3c5000 ---p 00015000 08:01 3550885                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_thread-gcc41-mt-p-1_38.so.1.38.0
+7ff59d3c5000-7ff59d3c7000 rwxp 00014000 08:01 3550885                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libboost_thread-gcc41-mt-p-1_38.so.1.38.0
+7ff59d3c7000-7ff59d3d6000 r-xp 00000000 08:01 3539636                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_bzip2-gcc41-mt-p-1_38.so.1.38.0
+7ff59d3d6000-7ff59d4d5000 ---p 0000f000 08:01 3539636                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_bzip2-gcc41-mt-p-1_38.so.1.38.0
+7ff59d4d5000-7ff59d4d7000 rwxp 0000e000 08:01 3539636                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_bzip2-gcc41-mt-p-1_38.so.1.38.0
+7ff59d4d7000-7ff59d4fe000 r-xp 00000000 08:01 3544919                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libmXMLInterface.so
+7ff59d4fe000-7ff59d6fd000 ---p 00027000 08:01 3544919                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libmXMLInterface.so
+7ff59d6fd000-7ff59d6ff000 rwxp 00026000 08:01 3544919                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libmXMLInterface.so
+7ff59d6ff000-7ff59da4f000 r-xp 00000000 08:01 3539618                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libxercesc.so
+7ff59da4f000-7ff59dc4e000 ---p 00350000 08:01 3539618                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libxercesc.so
+7ff59dc4e000-7ff59dc8b000 rwxp 0034f000 08:01 3539618                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libxercesc.so
+7ff59dc8b000-7ff59dc8c000 rwxp 00000000 00:00 0 
+7ff59dc8c000-7ff59dd24000 r-xp 00000000 08:01 3539661                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstlport.so.5.1
+7ff59dd24000-7ff59de24000 ---p 00098000 08:01 3539661                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstlport.so.5.1
+7ff59de24000-7ff59de2b000 rwxp 00098000 08:01 3539661                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libstlport.so.5.1
+7ff59de2b000-7ff59de3b000 rwxp 00000000 00:00 0 
+7ff59de3b000-7ff59de73000 r-xp 00000000 08:01 3544940                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkTclHwDb.so
+7ff59de73000-7ff59e073000 ---p 00038000 08:01 3544940                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkTclHwDb.so
+7ff59e073000-7ff59e075000 rwxp 00038000 08:01 3544940                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkTclHwDb.so
+7ff59e075000-7ff59e12f000 r-xp 00000000 08:01 533438                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libtcl8.4.so
+7ff59e12f000-7ff59e32f000 ---p 000ba000 08:01 533438                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libtcl8.4.so
+7ff59e32f000-7ff59e339000 rwxp 000ba000 08:01 533438                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libtcl8.4.so
+7ff59e339000-7ff59e33a000 rwxp 00000000 00:00 0 
+7ff59e33a000-7ff59e53c000 rwxp 00000000 08:01 3539547                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libisl_iostreams.so
+7ff59e53c000-7ff59e73c000 ---p 00202000 08:01 3539547                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libisl_iostreams.so
+7ff59e73c000-7ff59e762000 rwxp 00202000 08:01 3539547                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libisl_iostreams.so
+7ff59e762000-7ff59e765000 rwxp 00000000 00:00 0 
+7ff59e765000-7ff59e83a000 ---p 0042b000 08:01 3539547                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libisl_iostreams.so
+7ff59e83a000-7ff59ee25000 rwxp 00500000 08:01 3539547                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libisl_iostreams.so
+7ff59ee25000-7ff59ee32000 r-xp 00000000 08:01 3539645                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_iostreams-gcc41-mt-p-1_38.so.1.38.0
+7ff59ee32000-7ff59ef31000 ---p 0000d000 08:01 3539645                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_iostreams-gcc41-mt-p-1_38.so.1.38.0
+7ff59ef31000-7ff59ef32000 rwxp 0000c000 08:01 3539645                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_iostreams-gcc41-mt-p-1_38.so.1.38.0
+7ff59ef32000-7ff59ef36000 r-xp 00000000 08:01 3539654                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_system-gcc41-mt-p-1_38.so.1.38.0
+7ff59ef36000-7ff59f035000 ---p 00004000 08:01 3539654                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_system-gcc41-mt-p-1_38.so.1.38.0
+7ff59f035000-7ff59f036000 rwxp 00003000 08:01 3539654                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_system-gcc41-mt-p-1_38.so.1.38.0
+7ff59f036000-7ff59f04f000 r-xp 00000000 08:01 3539643                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_filesystem-gcc41-mt-p-1_38.so.1.38.0
+7ff59f04f000-7ff59f14f000 ---p 00019000 08:01 3539643                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_filesystem-gcc41-mt-p-1_38.so.1.38.0
+7ff59f14f000-7ff59f150000 rwxp 00019000 08:01 3539643                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_filesystem-gcc41-mt-p-1_38.so.1.38.0
+7ff59f150000-7ff59f208000 r-xp 00000000 08:01 3539650                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_regex-gcc41-mt-p-1_38.so.1.38.0
+7ff59f208000-7ff59f307000 ---p 000b8000 08:01 3539650                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_regex-gcc41-mt-p-1_38.so.1.38.0
+7ff59f307000-7ff59f30c000 rwxp 000b7000 08:01 3539650                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libboost_regex-gcc41-mt-p-1_38.so.1.38.0
+7ff59f30c000-7ff59f315000 r-xp 00000000 08:01 3539576                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libMiniZip.so
+7ff59f315000-7ff59f514000 ---p 00009000 08:01 3539576                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libMiniZip.so
+7ff59f514000-7ff59f515000 rwxp 00008000 08:01 3539576                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libMiniZip.so
+7ff59f515000-7ff59f52b000 r-xp 00000000 08:01 3539634                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libZlib.so
+7ff59f52b000-7ff59f72a000 ---p 00016000 08:01 3539634                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libZlib.so
+7ff59f72a000-7ff59f72b000 rwxp 00015000 08:01 3539634                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libZlib.so
+7ff59f72b000-7ff59f735000 r-xp 00000000 08:01 3539607                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libThread.so
+7ff59f735000-7ff59f934000 ---p 0000a000 08:01 3539607                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libThread.so
+7ff59f934000-7ff59f935000 rwxp 00009000 08:01 3539607                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libThread.so
+7ff59f935000-7ff59f938000 rwxp 00000000 00:00 0 
+7ff59f938000-7ff59f940000 r-xp 00000000 08:01 3539581                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libPort_Std.so
+7ff59f940000-7ff59fb3f000 ---p 00008000 08:01 3539581                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libPort_Std.so
+7ff59fb3f000-7ff59fb40000 rwxp 00007000 08:01 3539581                    /opt/Xilinx/14.5/ISE_DS/common/lib/lin64/libPort_Std.so
+7ff59fb40000-7ff59fb55000 r-xp 00000000 08:01 3544925                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkHwDb.so
+7ff59fb55000-7ff59fd55000 ---p 00015000 08:01 3544925                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkHwDb.so
+7ff59fd55000-7ff59fd56000 rwxp 00015000 08:01 3544925                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkHwDb.so
+7ff59fd56000-7ff59fdfc000 r-xp 00000000 08:01 3544938                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkSoftware.so
+7ff59fdfc000-7ff59fffb000 ---p 000a6000 08:01 3544938                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkSoftware.so
+7ff59fffb000-7ff5a0000000 rwxp 000a5000 08:01 3544938                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkSoftware.so
+7ff5a0000000-7ff5a0021000 rwxp 00000000 00:00 0 
+7ff5a0021000-7ff5a4000000 ---p 00000000 00:00 0 
+7ff5a4000000-7ff5a4021000 rwxp 00000000 00:00 0 
+7ff5a4021000-7ff5a8000000 ---p 00000000 00:00 0 
+7ff5a8000000-7ff5a8033000 rwxp 00000000 00:00 0 
+7ff5a8033000-7ff5ac000000 ---p 00000000 00:00 0 
+7ff5ac000000-7ff5ac0c5000 rwxp 00000000 00:00 0 
+7ff5ac0c5000-7ff5b0000000 ---p 00000000 00:00 0 
+7ff5b0000000-7ff5b004e000 rwxp 00000000 00:00 0 
+7ff5b004e000-7ff5b4000000 ---p 00000000 00:00 0 
+7ff5b4000000-7ff5b4049000 rwxp 00000000 00:00 0 
+7ff5b4049000-7ff5b8000000 ---p 00000000 00:00 0 
+7ff5b8000000-7ff5b876e000 rwxp 00000000 00:00 0 
+7ff5b876e000-7ff5bc000000 ---p 00000000 00:00 0 
+7ff5bc000000-7ff5bc024000 rwxp 00000000 00:00 0 
+7ff5bc024000-7ff5c0000000 ---p 00000000 00:00 0 
+7ff5c0000000-7ff5c0021000 rwxp 00000000 00:00 0 
+7ff5c0021000-7ff5c4000000 ---p 00000000 00:00 0 
+7ff5c4000000-7ff5c4021000 rwxp 00000000 00:00 0 
+7ff5c4021000-7ff5c8000000 ---p 00000000 00:00 0 
+7ff5c8000000-7ff5c8021000 rwxp 00000000 00:00 0 
+7ff5c8021000-7ff5cc000000 ---p 00000000 00:00 0 
+7ff5cc000000-7ff5cc031000 rwxp 00000000 00:00 0 
+7ff5cc031000-7ff5d0000000 ---p 00000000 00:00 0 
+7ff5d0000000-7ff5d0021000 rwxp 00000000 00:00 0 
+7ff5d0021000-7ff5d4000000 ---p 00000000 00:00 0 
+7ff5d4000000-7ff5d4151000 rwxp 00000000 00:00 0 
+7ff5d4151000-7ff5d8000000 ---p 00000000 00:00 0 
+7ff5d8000000-7ff5d8021000 rwxp 00000000 00:00 0 
+7ff5d8021000-7ff5dc000000 ---p 00000000 00:00 0 
+7ff5dc000000-7ff5dc022000 rwxp 00000000 00:00 0 
+7ff5dc022000-7ff5e0000000 ---p 00000000 00:00 0 
+7ff5e0004000-7ff5e0007000 ---p 00000000 00:00 0 
+7ff5e0007000-7ff5e0105000 rwxp 00000000 00:00 0                          [stack:14231]
+7ff5e0105000-7ff5e0180000 r-xp 00000000 08:01 3544778                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtBase.so
+7ff5e0180000-7ff5e0380000 ---p 0007b000 08:01 3544778                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtBase.so
+7ff5e0380000-7ff5e0384000 rwxp 0007b000 08:01 3544778                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libMdtBase.so
+7ff5e0384000-7ff5e03d2000 r-xp 00000000 08:01 533607                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libUtilities.so
+7ff5e03d2000-7ff5e05d1000 ---p 0004e000 08:01 533607                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libUtilities.so
+7ff5e05d1000-7ff5e05d4000 rwxp 0004d000 08:01 533607                     /opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64/libUtilities.so
+7ff5e05d4000-7ff5e0725000 r-xp 00000000 08:01 3550882                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libPortability.so
+7ff5e0725000-7ff5e0925000 ---p 00151000 08:01 3550882                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libPortability.so
+7ff5e0925000-7ff5e0930000 rwxp 00151000 08:01 3550882                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libPortability.so
+7ff5e0930000-7ff5e0937000 r-xp 00000000 08:01 3544928                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJHwPlatform.so
+7ff5e0937000-7ff5e0b37000 ---p 00007000 08:01 3544928                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJHwPlatform.so
+7ff5e0b37000-7ff5e0b38000 rwxp 00007000 08:01 3544928                    /opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64/libSdkJHwPlatform.so
+7ff5e0b38000-7ff5e0b3b000 ---p 00000000 00:00 0 
+7ff5e0b3b000-7ff5e0c39000 rwxp 00000000 00:00 0                          [stack:14227]
+7ff5e0c39000-7ff5e0c3c000 ---p 00000000 00:00 0 
+7ff5e0c3c000-7ff5e0d3a000 rwxp 00000000 00:00 0                          [stack:14225]
+7ff5e0d3a000-7ff5e0d3d000 ---p 00000000 00:00 0 
+7ff5e0d3d000-7ff5e0e3b000 rwxp 00000000 00:00 0                          [stack:14224]
+7ff5e0e3b000-7ff5e0e3e000 ---p 00000000 00:00 0 
+7ff5e0e3e000-7ff5e0f3c000 rwxp 00000000 00:00 0 
+7ff5e0f3c000-7ff5e0f3f000 ---p 00000000 00:00 0 
+7ff5e0f3f000-7ff5e103d000 rwxp 00000000 00:00 0 
+7ff5e103d000-7ff5e1040000 ---p 00000000 00:00 0 
+7ff5e1040000-7ff5e113e000 rwxp 00000000 00:00 0 
+7ff5e113e000-7ff5e1141000 ---p 00000000 00:00 0 
+7ff5e1141000-7ff5e123f000 rwxp 00000000 00:00 0 
+7ff5e123f000-7ff5e1242000 ---p 00000000 00:00 0 
+7ff5e1242000-7ff5e1340000 rwxp 00000000 00:00 0 
+7ff5e1340000-7ff5e1346000 r-xp 00000000 08:01 1180566                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+7ff5e1346000-7ff5e1545000 ---p 00006000 08:01 1180566                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+7ff5e1545000-7ff5e1546000 r-xp 00005000 08:01 1180566                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+7ff5e1546000-7ff5e1547000 rwxp 00006000 08:01 1180566                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so
+7ff5e1563000-7ff5e156e000 r-xp 00000000 08:01 1710907                    /usr/share/icons/Humanity-Dark/icon-theme.cache
+7ff5e156e000-7ff5e1591000 r-xp 00000000 08:01 1865678                    /usr/share/icons/ubuntu-mono-dark/icon-theme.cache
+7ff5e1591000-7ff5e159a000 r-xs 00045000 08:01 3542285                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.dsf_2.3.0.201209170703.jar
+7ff5e159a000-7ff5e15b6000 r-xs 0012f000 08:01 3551972                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.dsf.gdb_4.1.1.201209170703.jar
+7ff5e15b6000-7ff5e15bf000 r-xs 00064000 08:01 3562770                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.tcf.debug_1.1.0.201301251521.jar
+7ff5e15bf000-7ff5e15cb000 r-xs 0006b000 08:01 3553160                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.tcf.core_1.1.0.201301251521.jar
+7ff5e15cb000-7ff5e15d2000 r-xs 00000000 08:01 1188622                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7ff5e15d8000-7ff5e15e9000 r-xs 000be000 08:01 3553161                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.tcf.debug.ui_1.1.0.201301251521.jar
+7ff5e15e9000-7ff5e15f2000 r-xs 00089000 08:01 3542361                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.update.core_3.2.600.v20120530-120908.jar
+7ff5e15f2000-7ff5e15f4000 r-xs 00007000 08:01 3542362                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.update.scheduler_3.2.400.v20120530-120908.jar
+7ff5e15f4000-7ff5e15f7000 r-xs 0001a000 08:01 3559724                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.metadata.repository_1.2.100.v20120524-1717.jar
+7ff5e15f7000-7ff5e15fb000 r-xs 0001d000 08:01 3562763                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.repository_2.2.0.v20120524-1945.jar
+7ff5e15fb000-7ff5e1603000 r-xs 0004c000 08:01 3557010                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.metadata_2.1.0.v20120430-2001.jar
+7ff5e1603000-7ff5e1606000 r-xs 00013000 08:01 3546528                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.codan.checkers_1.1.0.201209170703.jar
+7ff5e1606000-7ff5e160a000 r-xs 0002d000 08:01 3553132                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.engine_2.2.0.v20120501-1502.jar
+7ff5e160a000-7ff5e160f000 r-xs 0001f000 08:01 3546530                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.codan.core_2.1.0.201209170703.jar
+7ff5e160f000-7ff5e1612000 r-xs 0000e000 08:01 3546529                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.codan.core.cxx_1.1.0.201209170703.jar
+7ff5e1612000-7ff5e1614000 r-xs 0000d000 08:01 3562760                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.operations_2.2.0.v20120524-0542.jar
+7ff5e1614000-7ff5e1616000 r-xs 0000d000 08:01 3562764                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.ui.sdk.scheduler_1.1.0.v20110815-1744.jar
+7ff5e1616000-7ff5e1618000 r-xs 00005000 08:01 3558390                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.codan.ui.cxx_3.0.0.201209170703.jar
+7ff5e1618000-7ff5e161a000 r-xs 00007000 08:01 3542274                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.hw.sync_1.0.0.jar
+7ff5e161a000-7ff5e161b000 r-xs 00002000 08:01 3556995                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.loggers_1.0.0.jar
+7ff5e161b000-7ff5e1628000 r-xs 00078000 08:01 3558391                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.debug.core_7.2.0.201209170703.jar
+7ff5e1628000-7ff5e1634000 r-xs 0007e000 08:01 3558392                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.debug.mi.core_7.2.0.201209170703.jar
+7ff5e1634000-7ff5e1637000 ---p 00000000 00:00 0 
+7ff5e1637000-7ff5e1735000 rwxp 00000000 00:00 0 
+7ff5e1735000-7ff5e1737000 r-xs 0000a000 08:01 3558426                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.net_1.2.100.v20120522-1148.jar
+7ff5e1737000-7ff5e173a000 r-xs 00013000 08:01 787726                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/jce.jar
+7ff5e173a000-7ff5e173d000 r-xs 00018000 08:01 3562766                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.security_1.1.100.v20120522-1841.jar
+7ff5e173d000-7ff5e173e000 r-xs 00009000 08:01 3559712                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.net.linux.x86_64_1.1.0.v20120522-1148.jar
+7ff5e173e000-7ff5e1748000 r-xs 00066000 08:01 3546553                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ltk.ui.refactoring_3.7.0.v20120523-1543.jar
+7ff5e1748000-7ff5e1750000 r-xs 00070000 08:01 3542330                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.rse.files.ui_3.2.101.201209191030.jar
+7ff5e1750000-7ff5e1753000 ---p 00000000 00:00 0 
+7ff5e1753000-7ff5e1851000 rwxp 00000000 00:00 0                          [stack:14215]
+7ff5e1851000-7ff5e189e000 r-xp 00000000 08:01 1576301                    /usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono-Bold.ttf
+7ff5e189e000-7ff5e18f6000 r-xp 00000000 08:01 1576327                    /usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-BI.ttf
+7ff5e18f6000-7ff5e1955000 r-xp 00000000 08:01 1576332                    /usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-RI.ttf
+7ff5e1955000-7ff5e19a7000 r-xp 00000000 08:01 1576326                    /usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-B.ttf
+7ff5e19a7000-7ff5e19aa000 ---p 00000000 00:00 0 
+7ff5e19aa000-7ff5e1aa8000 rwxp 00000000 00:00 0 
+7ff5e1aa8000-7ff5e1aaa000 r-xs 00010000 08:01 3559713                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.net_1.2.200.v20120522-1148.jar
+7ff5e1aaa000-7ff5e1aae000 r-xs 0001e000 08:01 3542350                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.externaltools_3.2.100.v20120530-1753.jar
+7ff5e1aae000-7ff5e1ab0000 r-xs 00003000 08:01 3551850                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.ui_1.0.0.jar
+7ff5e1ab0000-7ff5e1ab8000 r-xs 00115000 08:01 806194                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/resources.jar
+7ff5e1ab8000-7ff5e1ac2000 r-xs 0005a000 08:01 3542357                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.navigator_3.5.200.v20120523-1956.jar
+7ff5e1ac2000-7ff5e1acc000 r-xs 0006a000 08:01 3542287                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.make.ui_7.2.0.201209170703.jar
+7ff5e1acc000-7ff5e1ad0000 r-xs 0001a000 08:01 3559744                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.navigator.resources_3.4.400.v20120523-1956.jar
+7ff5e1ada000-7ff5e1ae2000 r-xs 0004d000 08:01 3546537                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.debug.core_3.7.100.v20120521-2012.jar
+7ff5e1ae2000-7ff5e1ae4000 r-xs 00007000 08:01 3542307                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.variables_3.2.600.v20120521-2012.jar
+7ff5e1ae4000-7ff5e1ae8000 r-xs 00024000 08:01 3542349                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.console_3.5.100.v20120521-2012.jar
+7ff5e1ae8000-7ff5e1af2000 r-xs 0005d000 08:01 3562771                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.slf4j.api.logback_1.5.8.jar
+7ff5e1af2000-7ff5e1af4000 r-xs 00008000 08:01 3546520                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.managedbuilder_1.0.0.jar
+7ff5e1af4000-7ff5e1afd000 r-xs 00059000 08:01 3542342                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.team.core_3.6.100.v20120524-0627.jar
+7ff5e1afd000-7ff5e1b06000 r-xs 0006a000 08:01 3553158                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.search_3.8.0.v20120523-1540.jar
+7ff5e1b06000-7ff5e1b09000 r-xs 0001a000 08:01 3546531                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.codan.ui_2.1.0.201209170703.jar
+7ff5e1b09000-7ff5e1b10000 r-xs 00049000 08:01 3546552                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ltk.core.refactoring_3.6.0.v20120523-1543.jar
+7ff5e1b10000-7ff5e1b13000 r-xs 00014000 08:01 3542359                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.views_3.6.100.v20120521-2332.jar
+7ff5e1b13000-7ff5e1b25000 r-xs 0012d000 08:01 3542288                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.managedbuilder.core_8.1.0.201209170703.jar
+7ff5e1b25000-7ff5e1b2d000 r-xs 00062000 08:01 3551974                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.make.core_7.2.0.201209170703.jar
+7ff5e1b2d000-7ff5e1b30000 r-xs 00019000 08:01 3542306                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.filebuffers_3.5.200.v20120523-1310.jar
+7ff5e1b30000-7ff5e1b7c000 r-xs 00477000 08:01 3551855                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.core_5.4.1.201209170703.jar
+7ff5e1b7c000-7ff5e1b7e000 r-xs 00002000 08:01 3546532                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.core.linux_5.2.0.201209170703.jar
+7ff5e1b7e000-7ff5e1b92000 r-xs 000df000 08:01 3542321                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.jface.text_3.8.0.v20120531-0600.jar
+7ff5e1b92000-7ff5e1b97000 r-xs 00038000 08:01 3559742                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.text_3.5.200.v20120523-1310.jar
+7ff5e1b97000-7ff5e1ba3000 r-xs 00081000 08:01 3546568                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.editors_3.8.0.v20120523-1540.jar
+7ff5e1ba3000-7ff5e1bae000 r-xs 00084000 08:01 3542360                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.workbench.texteditor_3.8.0.v20120523-1310.jar
+7ff5e1bae000-7ff5e1c09000 r-xs 00514000 08:01 3558407                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.ui_5.5.0.201209170703.jar
+7ff5e1c09000-7ff5e1c0b000 r-xs 00008000 08:01 3542275                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.hw_1.0.0.jar
+7ff5e1c12000-7ff5e1c15000 r-xs 00018000 08:01 3556997                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.sw.ui_1.0.1.jar
+7ff5e1c15000-7ff5e1c18000 r-xs 00011000 08:01 3546521                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.sw_1.0.0.jar
+7ff5e1c1a000-7ff5e1c33000 r-xs 00101000 08:01 3557000                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.debug.ui_7.2.0.201209170703.jar
+7ff5e1c33000-7ff5e1c36000 ---p 00000000 00:00 0 
+7ff5e1c36000-7ff5e1d34000 rwxp 00000000 00:00 0 
+7ff5e1d3d000-7ff5e1d4a000 r-xs 0007d000 08:01 3546533                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.dsf.gdb.ui_2.3.1.201209170703.jar
+7ff5e1d4a000-7ff5e1d4e000 r-xs 00022000 08:01 3562755                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.debug.mi.ui_6.1.1.201209170703.jar
+7ff5e1d4e000-7ff5e1d81000 r-xs 0024b000 08:01 3562758                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.debug.ui_3.8.0.v20120530-1753.jar
+7ff5e1d81000-7ff5e1d84000 r-xs 00013000 08:01 3559708                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.expressions_3.4.400.v20120523-2004.jar
+7ff5e1d84000-7ff5e1d87000 r-xs 00010000 08:01 3542276                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.tcf.debug.ui_1.0.0.jar
+7ff5e1d87000-7ff5e1d8c000 r-xs 00035000 08:01 3551973                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.launch_7.1.0.201209170703.jar
+7ff5e1d8c000-7ff5e1d8e000 r-xp 00000000 08:01 273611                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/101/2/.cp/os/linux/x86_64/libunixfile_1_0_0.so
+7ff5e1d8e000-7ff5e1e8d000 ---p 00002000 08:01 273611                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/101/2/.cp/os/linux/x86_64/libunixfile_1_0_0.so
+7ff5e1e8d000-7ff5e1e8e000 rwxp 00001000 08:01 273611                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/101/2/.cp/os/linux/x86_64/libunixfile_1_0_0.so
+7ff5e1e8e000-7ff5e1f33000 r-xp 00000000 08:01 1576299                    /usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-Bold.ttf
+7ff5e1f33000-7ff5e1f3e000 r-xp 00000000 08:01 273388                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-atk-gtk-3833.so
+7ff5e1f3e000-7ff5e203e000 ---p 0000b000 08:01 273388                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-atk-gtk-3833.so
+7ff5e203e000-7ff5e203f000 rwxp 0000b000 08:01 273388                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-atk-gtk-3833.so
+7ff5e203f000-7ff5e2083000 r-xp 00000000 08:01 925595                     /usr/lib/x86_64-linux-gnu/libibus-1.0.so.0.401.0
+7ff5e2083000-7ff5e2282000 ---p 00044000 08:01 925595                     /usr/lib/x86_64-linux-gnu/libibus-1.0.so.0.401.0
+7ff5e2282000-7ff5e2284000 r-xp 00043000 08:01 925595                     /usr/lib/x86_64-linux-gnu/libibus-1.0.so.0.401.0
+7ff5e2284000-7ff5e2285000 rwxp 00045000 08:01 925595                     /usr/lib/x86_64-linux-gnu/libibus-1.0.so.0.401.0
+7ff5e2285000-7ff5e2286000 rwxp 00000000 00:00 0 
+7ff5e2286000-7ff5e228c000 r-xp 00000000 08:01 1180729                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ibus.so
+7ff5e228c000-7ff5e248b000 ---p 00006000 08:01 1180729                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ibus.so
+7ff5e248b000-7ff5e248c000 r-xp 00005000 08:01 1180729                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ibus.so
+7ff5e248c000-7ff5e248d000 rwxp 00006000 08:01 1180729                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/immodules/im-ibus.so
+7ff5e248d000-7ff5e24ed000 rwxs 00000000 00:04 87293954                   /SYSV00000000 (deleted)
+7ff5e24ed000-7ff5e24fa000 r-xp 00000000 08:01 273387                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-cairo-gtk-3833.so
+7ff5e24fa000-7ff5e25fa000 ---p 0000d000 08:01 273387                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-cairo-gtk-3833.so
+7ff5e25fa000-7ff5e25fb000 rwxp 0000d000 08:01 273387                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-cairo-gtk-3833.so
+7ff5e25fb000-7ff5e25ff000 r-xp 00000000 08:01 1180572                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+7ff5e25ff000-7ff5e27ff000 ---p 00004000 08:01 1180572                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+7ff5e27ff000-7ff5e2800000 r-xp 00004000 08:01 1180572                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+7ff5e2800000-7ff5e2801000 rwxp 00005000 08:01 1180572                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-png.so
+7ff5e2801000-7ff5e2802000 r-xs 00002000 08:01 3558382                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.startup_1.0.0.jar
+7ff5e2802000-7ff5e2854000 r-xp 00000000 08:01 1576302                    /usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf
+7ff5e2854000-7ff5e28ab000 r-xp 00000000 08:01 1576331                    /usr/share/fonts/truetype/ubuntu-font-family/Ubuntu-R.ttf
+7ff5e28ab000-7ff5e28ad000 r-xp 00000000 08:01 1180937                    /usr/lib/x86_64-linux-gnu/pango/1.6.0/modules/pango-basic-fc.so
+7ff5e28ad000-7ff5e2aac000 ---p 00002000 08:01 1180937                    /usr/lib/x86_64-linux-gnu/pango/1.6.0/modules/pango-basic-fc.so
+7ff5e2aac000-7ff5e2aad000 r-xp 00001000 08:01 1180937                    /usr/lib/x86_64-linux-gnu/pango/1.6.0/modules/pango-basic-fc.so
+7ff5e2aad000-7ff5e2aae000 rwxp 00002000 08:01 1180937                    /usr/lib/x86_64-linux-gnu/pango/1.6.0/modules/pango-basic-fc.so
+7ff5e2aae000-7ff5e2ab3000 r-xp 00000000 08:01 919319                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7ff5e2ab3000-7ff5e2cb2000 ---p 00005000 08:01 919319                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7ff5e2cb2000-7ff5e2cb3000 r-xp 00004000 08:01 919319                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7ff5e2cb3000-7ff5e2cb4000 rwxp 00005000 08:01 919319                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7ff5e2cb4000-7ff5e2cb5000 r-xp 00000000 08:01 925571                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.3200.3
+7ff5e2cb5000-7ff5e2eb4000 ---p 00001000 08:01 925571                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.3200.3
+7ff5e2eb4000-7ff5e2eb5000 r-xp 00000000 08:01 925571                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.3200.3
+7ff5e2eb5000-7ff5e2eb6000 rwxp 00001000 08:01 925571                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.3200.3
+7ff5e2eb6000-7ff5e2eb8000 r-xs 00051000 08:01 3551848                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.targetmanager_1.0.0.jar
+7ff5e2eb8000-7ff5e2ec2000 r-xs 00056000 08:01 3553159                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.tcf.cdt.ui_1.1.0.201301251521.jar
+7ff5e2ec2000-7ff5e2ecd000 r-xs 000bb000 08:01 3553124                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.resources_3.8.0.v20120522-2034.jar
+7ff5e2ecd000-7ff5e2f41000 r-xp 00000000 08:01 273386                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-pi-gtk-3833.so
+7ff5e2f41000-7ff5e3041000 ---p 00074000 08:01 273386                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-pi-gtk-3833.so
+7ff5e3041000-7ff5e3044000 rwxp 00074000 08:01 273386                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-pi-gtk-3833.so
+7ff5e3044000-7ff5e3046000 rwxp 00000000 00:00 0 
+7ff5e3046000-7ff5e30c4000 r-xp 00000000 08:01 273385                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-gtk-3833.so
+7ff5e30c4000-7ff5e31c3000 ---p 0007e000 08:01 273385                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-gtk-3833.so
+7ff5e31c3000-7ff5e31ca000 rwxp 0007d000 08:01 273385                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/242/2/.cp/libswt-gtk-3833.so
+7ff5e31ca000-7ff5e31cd000 rwxp 00000000 00:00 0 
+7ff5e31cd000-7ff5e31d0000 ---p 00000000 00:00 0 
+7ff5e31d0000-7ff5e32ce000 rwxp 00000000 00:00 0                          [stack:14280]
+7ff5e32ce000-7ff5e32d1000 ---p 00000000 00:00 0 
+7ff5e32d1000-7ff5e33cf000 rwxp 00000000 00:00 0                          [stack:14208]
+7ff5e33cf000-7ff5e33d2000 ---p 00000000 00:00 0 
+7ff5e33d2000-7ff5e34d0000 rwxp 00000000 00:00 0                          [stack:14207]
+7ff5e34d0000-7ff5e34d3000 ---p 00000000 00:00 0 
+7ff5e34d3000-7ff5e35d1000 rwxp 00000000 00:00 0                          [stack:14211]
+7ff5e35d1000-7ff5e35d4000 ---p 00000000 00:00 0 
+7ff5e35d4000-7ff5e36d2000 rwxp 00000000 00:00 0                          [stack:14205]
+7ff5e36d2000-7ff5e36d5000 ---p 00000000 00:00 0 
+7ff5e36d5000-7ff5e37d3000 rwxp 00000000 00:00 0                          [stack:14204]
+7ff5e37d3000-7ff5e37d6000 ---p 00000000 00:00 0 
+7ff5e37d6000-7ff5e38d4000 rwxp 00000000 00:00 0                          [stack:14203]
+7ff5e38d4000-7ff5e38d7000 ---p 00000000 00:00 0 
+7ff5e38d7000-7ff5e39d5000 rwxp 00000000 00:00 0                          [stack:14202]
+7ff5e39d5000-7ff5e39dc000 r-xp 00000000 08:01 792129                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7ff5e39dc000-7ff5e3adb000 ---p 00007000 08:01 792129                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7ff5e3adb000-7ff5e3add000 rwxp 00006000 08:01 792129                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnio.so
+7ff5e3add000-7ff5e3af0000 r-xp 00000000 08:01 792128                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7ff5e3af0000-7ff5e3bf1000 ---p 00013000 08:01 792128                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7ff5e3bf1000-7ff5e3bf4000 rwxp 00014000 08:01 792128                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libnet.so
+7ff5e3bf4000-7ff5e3bf7000 r-xp 00000000 08:01 1180565                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+7ff5e3bf7000-7ff5e3df7000 ---p 00003000 08:01 1180565                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+7ff5e3df7000-7ff5e3df8000 r-xp 00003000 08:01 1180565                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+7ff5e3df8000-7ff5e3df9000 rwxp 00004000 08:01 1180565                    /usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-bmp.so
+7ff5e3df9000-7ff5e3dff000 r-xp 00000000 08:01 925680                     /usr/lib/x86_64-linux-gnu/libogg.so.0.7.1
+7ff5e3dff000-7ff5e3ffe000 ---p 00006000 08:01 925680                     /usr/lib/x86_64-linux-gnu/libogg.so.0.7.1
+7ff5e3ffe000-7ff5e3fff000 r-xp 00005000 08:01 925680                     /usr/lib/x86_64-linux-gnu/libogg.so.0.7.1
+7ff5e3fff000-7ff5e4000000 rwxp 00006000 08:01 925680                     /usr/lib/x86_64-linux-gnu/libogg.so.0.7.1
+7ff5e4000000-7ff5e4022000 rwxp 00000000 00:00 0 
+7ff5e4022000-7ff5e8000000 ---p 00000000 00:00 0 
+7ff5e8000000-7ff5e8001000 r-xs 00003000 08:01 3546522                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.utils_1.0.0.jar
+7ff5e8001000-7ff5e8029000 r-xs 00219000 08:01 3553182                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.ide_3.8.0.v20120521-2332.jar
+7ff5e8029000-7ff5e802a000 r-xs 00000000 08:01 2753560                    /var/cache/fontconfig/c05880de57d1f5e948fdfacc138775d9-le64.cache-3
+7ff5e802a000-7ff5e8033000 r-xs 00000000 08:01 2753555                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-3
+7ff5e8033000-7ff5e8035000 r-xs 00000000 08:01 2753556                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-3
+7ff5e8035000-7ff5e8039000 r-xs 00000000 08:01 2753542                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-3
+7ff5e8039000-7ff5e803f000 r-xs 00000000 08:01 2753557                    /var/cache/fontconfig/a755afe4a08bf5b97852ceb7400b47bc-le64.cache-3
+7ff5e803f000-7ff5e8043000 r-xs 00000000 08:01 2753551                    /var/cache/fontconfig/6d41288fd70b0be22e8c3a91e032eec0-le64.cache-3
+7ff5e8043000-7ff5e8053000 r-xs 00000000 08:01 2753539                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-3
+7ff5e8053000-7ff5e8058000 r-xs 00000000 08:01 2753558                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-3
+7ff5e8058000-7ff5e8068000 r-xs 00000000 08:01 2753563                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-3
+7ff5e8068000-7ff5e80a4000 r-xs 00629000 08:01 3556992                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.ibm.icu_4.4.2.v20110823.jar
+7ff5e80a4000-7ff5e8104000 rwxs 00000000 00:04 87261236                   /SYSV00000000 (deleted)
+7ff5e8104000-7ff5e81a6000 rwxp 00000000 00:00 0 
+7ff5e81a6000-7ff5e81d1000 r-xp 00000000 08:01 925830                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7ff5e81d1000-7ff5e83d0000 ---p 0002b000 08:01 925830                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7ff5e83d0000-7ff5e83d1000 r-xp 0002a000 08:01 925830                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7ff5e83d1000-7ff5e83d2000 rwxp 0002b000 08:01 925830                     /usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.5
+7ff5e83d2000-7ff5e83da000 r-xp 00000000 08:01 925637                     /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.0
+7ff5e83da000-7ff5e85da000 ---p 00008000 08:01 925637                     /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.0
+7ff5e85da000-7ff5e85db000 r-xp 00008000 08:01 925637                     /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.0
+7ff5e85db000-7ff5e85dc000 rwxp 00009000 08:01 925637                     /usr/lib/x86_64-linux-gnu/libltdl.so.7.3.0
+7ff5e85dc000-7ff5e85ec000 r-xp 00000000 08:01 925805                     /usr/lib/x86_64-linux-gnu/libtdb.so.1.2.9
+7ff5e85ec000-7ff5e87eb000 ---p 00010000 08:01 925805                     /usr/lib/x86_64-linux-gnu/libtdb.so.1.2.9
+7ff5e87eb000-7ff5e87ec000 r-xp 0000f000 08:01 925805                     /usr/lib/x86_64-linux-gnu/libtdb.so.1.2.9
+7ff5e87ec000-7ff5e87ed000 rwxp 00010000 08:01 925805                     /usr/lib/x86_64-linux-gnu/libtdb.so.1.2.9
+7ff5e87ed000-7ff5e87f4000 r-xp 00000000 08:01 925834                     /usr/lib/x86_64-linux-gnu/libvorbisfile.so.3.3.4
+7ff5e87f4000-7ff5e89f3000 ---p 00007000 08:01 925834                     /usr/lib/x86_64-linux-gnu/libvorbisfile.so.3.3.4
+7ff5e89f3000-7ff5e89f4000 r-xp 00006000 08:01 925834                     /usr/lib/x86_64-linux-gnu/libvorbisfile.so.3.3.4
+7ff5e89f4000-7ff5e89f5000 rwxp 00007000 08:01 925834                     /usr/lib/x86_64-linux-gnu/libvorbisfile.so.3.3.4
+7ff5e89f5000-7ff5e8a04000 r-xp 00000000 08:01 925363                     /usr/lib/x86_64-linux-gnu/libcanberra.so.0.2.5
+7ff5e8a04000-7ff5e8c03000 ---p 0000f000 08:01 925363                     /usr/lib/x86_64-linux-gnu/libcanberra.so.0.2.5
+7ff5e8c03000-7ff5e8c04000 r-xp 0000e000 08:01 925363                     /usr/lib/x86_64-linux-gnu/libcanberra.so.0.2.5
+7ff5e8c04000-7ff5e8c05000 rwxp 0000f000 08:01 925363                     /usr/lib/x86_64-linux-gnu/libcanberra.so.0.2.5
+7ff5e8c05000-7ff5e8c09000 r-xp 00000000 08:01 925359                     /usr/lib/x86_64-linux-gnu/libcanberra-gtk.so.0.1.8
+7ff5e8c09000-7ff5e8e08000 ---p 00004000 08:01 925359                     /usr/lib/x86_64-linux-gnu/libcanberra-gtk.so.0.1.8
+7ff5e8e08000-7ff5e8e09000 r-xp 00003000 08:01 925359                     /usr/lib/x86_64-linux-gnu/libcanberra-gtk.so.0.1.8
+7ff5e8e09000-7ff5e8e0a000 rwxp 00004000 08:01 925359                     /usr/lib/x86_64-linux-gnu/libcanberra-gtk.so.0.1.8
+7ff5e8e0a000-7ff5e8e0c000 r-xs 0000b000 08:01 3546534                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.managedbuilder.gnu.ui_8.1.0.201209170703.jar
+7ff5e8e0c000-7ff5e8e21000 r-xs 0025d000 08:01 3558423                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.8.0.v3833.jar
+7ff5e8e21000-7ff5e8e26000 r-xp 00000000 08:01 1180744                    /usr/lib/x86_64-linux-gnu/gtk-2.0/modules/libcanberra-gtk-module.so
+7ff5e8e26000-7ff5e9025000 ---p 00005000 08:01 1180744                    /usr/lib/x86_64-linux-gnu/gtk-2.0/modules/libcanberra-gtk-module.so
+7ff5e9025000-7ff5e9026000 r-xp 00004000 08:01 1180744                    /usr/lib/x86_64-linux-gnu/gtk-2.0/modules/libcanberra-gtk-module.so
+7ff5e9026000-7ff5e9027000 rwxp 00005000 08:01 1180744                    /usr/lib/x86_64-linux-gnu/gtk-2.0/modules/libcanberra-gtk-module.so
+7ff5e9027000-7ff5e9056000 r-xp 00000000 08:01 1180722                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7ff5e9056000-7ff5e9256000 ---p 0002f000 08:01 1180722                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7ff5e9256000-7ff5e9257000 r-xp 0002f000 08:01 1180722                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7ff5e9257000-7ff5e9258000 rwxp 00030000 08:01 1180722                    /usr/lib/x86_64-linux-gnu/gtk-2.0/2.10.0/engines/libmurrine.so
+7ff5e9258000-7ff5e9259000 ---p 00000000 00:00 0 
+7ff5e9259000-7ff5e9a59000 rwxp 00000000 00:00 0                          [stack:14201]
+7ff5e9a59000-7ff5e9a5a000 ---p 00000000 00:00 0 
+7ff5e9a5a000-7ff5ea25a000 rwxp 00000000 00:00 0                          [stack:14199]
+7ff5ea25a000-7ff5ea261000 r-xp 00000000 08:01 1180584                    /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so
+7ff5ea261000-7ff5ea460000 ---p 00007000 08:01 1180584                    /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so
+7ff5ea460000-7ff5ea461000 r-xp 00006000 08:01 1180584                    /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so
+7ff5ea461000-7ff5ea462000 rwxp 00007000 08:01 1180584                    /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so
+7ff5ea462000-7ff5ea486000 r-xp 00000000 08:01 1181677                    /usr/share/glib-2.0/schemas/gschemas.compiled
+7ff5ea486000-7ff5ea496000 r-xp 00000000 08:01 920577                     /usr/lib/liboverlay-scrollbar-0.2.so.0.0.16
+7ff5ea496000-7ff5ea695000 ---p 00010000 08:01 920577                     /usr/lib/liboverlay-scrollbar-0.2.so.0.0.16
+7ff5ea695000-7ff5ea696000 r-xp 0000f000 08:01 920577                     /usr/lib/liboverlay-scrollbar-0.2.so.0.0.16
+7ff5ea696000-7ff5ea697000 rwxp 00010000 08:01 920577                     /usr/lib/liboverlay-scrollbar-0.2.so.0.0.16
+7ff5ea697000-7ff5ea6b6000 r-xp 00000000 08:01 925317                     /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20409.1
+7ff5ea6b6000-7ff5ea8b6000 ---p 0001f000 08:01 925317                     /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20409.1
+7ff5ea8b6000-7ff5ea8b8000 r-xp 0001f000 08:01 925317                     /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20409.1
+7ff5ea8b8000-7ff5ea8b9000 rwxp 00021000 08:01 925317                     /usr/lib/x86_64-linux-gnu/libatk-1.0.so.0.20409.1
+7ff5ea8b9000-7ff5eace6000 r-xp 00000000 08:01 925575                     /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.10
+7ff5eace6000-7ff5eaee6000 ---p 0042d000 08:01 925575                     /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.10
+7ff5eaee6000-7ff5eaeed000 r-xp 0042d000 08:01 925575                     /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.10
+7ff5eaeed000-7ff5eaef1000 rwxp 00434000 08:01 925575                     /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0.2400.10
+7ff5eaef1000-7ff5eaef3000 rwxp 00000000 00:00 0 
+7ff5eaef3000-7ff5eaef8000 r-xp 00000000 08:01 925265                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7ff5eaef8000-7ff5eb0f7000 ---p 00005000 08:01 925265                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7ff5eb0f7000-7ff5eb0f8000 r-xp 00004000 08:01 925265                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7ff5eb0f8000-7ff5eb0f9000 rwxp 00005000 08:01 925265                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7ff5eb0f9000-7ff5eb0fb000 r-xp 00000000 08:01 925254                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7ff5eb0fb000-7ff5eb2fa000 ---p 00002000 08:01 925254                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7ff5eb2fa000-7ff5eb2fb000 r-xp 00001000 08:01 925254                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7ff5eb2fb000-7ff5eb2fc000 rwxp 00002000 08:01 925254                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7ff5eb2fc000-7ff5eb319000 r-xp 00000000 08:01 919097                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7ff5eb319000-7ff5eb518000 ---p 0001d000 08:01 919097                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7ff5eb518000-7ff5eb519000 r-xp 0001c000 08:01 919097                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7ff5eb519000-7ff5eb51a000 rwxp 0001d000 08:01 919097                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7ff5eb51a000-7ff5eb522000 r-xp 00000000 08:01 919297                     /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7ff5eb522000-7ff5eb722000 ---p 00008000 08:01 919297                     /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7ff5eb722000-7ff5eb723000 r-xp 00008000 08:01 919297                     /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7ff5eb723000-7ff5eb724000 rwxp 00009000 08:01 919297                     /usr/lib/x86_64-linux-gnu/libxcb-render.so.0.0.0
+7ff5eb724000-7ff5eb726000 r-xp 00000000 08:01 919301                     /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7ff5eb726000-7ff5eb925000 ---p 00002000 08:01 919301                     /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7ff5eb925000-7ff5eb926000 r-xp 00001000 08:01 919301                     /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7ff5eb926000-7ff5eb927000 rwxp 00002000 08:01 919301                     /usr/lib/x86_64-linux-gnu/libxcb-shm.so.0.0.0
+7ff5eb927000-7ff5eb94d000 r-xp 00000000 08:01 397000                     /lib/x86_64-linux-gnu/libpng12.so.0.46.0
+7ff5eb94d000-7ff5ebb4d000 ---p 00026000 08:01 397000                     /lib/x86_64-linux-gnu/libpng12.so.0.46.0
+7ff5ebb4d000-7ff5ebb4e000 r-xp 00026000 08:01 397000                     /lib/x86_64-linux-gnu/libpng12.so.0.46.0
+7ff5ebb4e000-7ff5ebb4f000 rwxp 00027000 08:01 397000                     /lib/x86_64-linux-gnu/libpng12.so.0.46.0
+7ff5ebb4f000-7ff5ebbd0000 r-xp 00000000 08:01 925712                     /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.24.4
+7ff5ebbd0000-7ff5ebdcf000 ---p 00081000 08:01 925712                     /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.24.4
+7ff5ebdcf000-7ff5ebdd5000 r-xp 00080000 08:01 925712                     /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.24.4
+7ff5ebdd5000-7ff5ebdd6000 rwxp 00086000 08:01 925712                     /usr/lib/x86_64-linux-gnu/libpixman-1.so.0.24.4
+7ff5ebdd6000-7ff5ebdfd000 r-xp 00000000 08:01 396941                     /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7ff5ebdfd000-7ff5ebffd000 ---p 00027000 08:01 396941                     /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7ff5ebffd000-7ff5ebfff000 r-xp 00027000 08:01 396941                     /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7ff5ebfff000-7ff5ec000000 rwxp 00029000 08:01 396941                     /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7ff5ec000000-7ff5ec021000 rwxp 00000000 00:00 0 
+7ff5ec021000-7ff5f0000000 ---p 00000000 00:00 0 
+7ff5f0000000-7ff5f0001000 r-xs 00004000 08:01 3542284                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.cdt.core.linux.x86_64_5.2.0.201209170703.jar
+7ff5f0001000-7ff5f0048000 r-xs 003b4000 08:01 3559745                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.workbench_3.8.0.v20120521-2332.jar
+7ff5f0048000-7ff5f0060000 r-xp 00000000 08:01 394049                     /lib/x86_64-linux-gnu/libresolv-2.15.so
+7ff5f0060000-7ff5f0260000 ---p 00018000 08:01 394049                     /lib/x86_64-linux-gnu/libresolv-2.15.so
+7ff5f0260000-7ff5f0261000 r-xp 00018000 08:01 394049                     /lib/x86_64-linux-gnu/libresolv-2.15.so
+7ff5f0261000-7ff5f0262000 rwxp 00019000 08:01 394049                     /lib/x86_64-linux-gnu/libresolv-2.15.so
+7ff5f0262000-7ff5f0264000 rwxp 00000000 00:00 0 
+7ff5f0264000-7ff5f0281000 r-xp 00000000 08:01 397011                     /lib/x86_64-linux-gnu/libselinux.so.1
+7ff5f0281000-7ff5f0480000 ---p 0001d000 08:01 397011                     /lib/x86_64-linux-gnu/libselinux.so.1
+7ff5f0480000-7ff5f0481000 r-xp 0001c000 08:01 397011                     /lib/x86_64-linux-gnu/libselinux.so.1
+7ff5f0481000-7ff5f0482000 rwxp 0001d000 08:01 397011                     /lib/x86_64-linux-gnu/libselinux.so.1
+7ff5f0482000-7ff5f0483000 rwxp 00000000 00:00 0 
+7ff5f0483000-7ff5f0499000 r-xp 00000000 08:01 397034                     /lib/x86_64-linux-gnu/libz.so.1.2.3.4
+7ff5f0499000-7ff5f0698000 ---p 00016000 08:01 397034                     /lib/x86_64-linux-gnu/libz.so.1.2.3.4
+7ff5f0698000-7ff5f0699000 r-xp 00015000 08:01 397034                     /lib/x86_64-linux-gnu/libz.so.1.2.3.4
+7ff5f0699000-7ff5f069a000 rwxp 00016000 08:01 397034                     /lib/x86_64-linux-gnu/libz.so.1.2.3.4
+7ff5f069a000-7ff5f069d000 r-xp 00000000 08:01 925500                     /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3200.3
+7ff5f069d000-7ff5f089c000 ---p 00003000 08:01 925500                     /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3200.3
+7ff5f089c000-7ff5f089d000 r-xp 00002000 08:01 925500                     /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3200.3
+7ff5f089d000-7ff5f089e000 rwxp 00003000 08:01 925500                     /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.3200.3
+7ff5f089e000-7ff5f0934000 r-xp 00000000 08:01 925457                     /usr/lib/x86_64-linux-gnu/libfreetype.so.6.8.0
+7ff5f0934000-7ff5f0b33000 ---p 00096000 08:01 925457                     /usr/lib/x86_64-linux-gnu/libfreetype.so.6.8.0
+7ff5f0b33000-7ff5f0b39000 r-xp 00095000 08:01 925457                     /usr/lib/x86_64-linux-gnu/libfreetype.so.6.8.0
+7ff5f0b39000-7ff5f0b3a000 rwxp 0009b000 08:01 925457                     /usr/lib/x86_64-linux-gnu/libfreetype.so.6.8.0
+7ff5f0b3a000-7ff5f0b63000 r-xp 00000000 08:01 925696                     /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3000.0
+7ff5f0b63000-7ff5f0d62000 ---p 00029000 08:01 925696                     /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3000.0
+7ff5f0d62000-7ff5f0d63000 r-xp 00028000 08:01 925696                     /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3000.0
+7ff5f0d63000-7ff5f0d64000 rwxp 00029000 08:01 925696                     /usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so.0.3000.0
+7ff5f0d64000-7ff5f0e94000 r-xp 00000000 08:01 919121                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7ff5f0e94000-7ff5f1094000 ---p 00130000 08:01 919121                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7ff5f1094000-7ff5f1095000 r-xp 00130000 08:01 919121                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7ff5f1095000-7ff5f1099000 rwxp 00131000 08:01 919121                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7ff5f1099000-7ff5f1152000 r-xp 00000000 08:01 925355                     /usr/lib/x86_64-linux-gnu/libcairo.so.2.11000.2
+7ff5f1152000-7ff5f1351000 ---p 000b9000 08:01 925355                     /usr/lib/x86_64-linux-gnu/libcairo.so.2.11000.2
+7ff5f1351000-7ff5f1353000 r-xp 000b8000 08:01 925355                     /usr/lib/x86_64-linux-gnu/libcairo.so.2.11000.2
+7ff5f1353000-7ff5f1354000 rwxp 000ba000 08:01 925355                     /usr/lib/x86_64-linux-gnu/libcairo.so.2.11000.2
+7ff5f1354000-7ff5f1357000 rwxp 00000000 00:00 0 
+7ff5f1357000-7ff5f135c000 r-xp 00000000 08:01 919190                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7ff5f135c000-7ff5f155b000 ---p 00005000 08:01 919190                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7ff5f155b000-7ff5f155c000 r-xp 00004000 08:01 919190                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7ff5f155c000-7ff5f155d000 rwxp 00005000 08:01 919190                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7ff5f155d000-7ff5f155f000 r-xp 00000000 08:01 925263                     /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7ff5f155f000-7ff5f175e000 ---p 00002000 08:01 925263                     /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7ff5f175e000-7ff5f175f000 r-xp 00001000 08:01 925263                     /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7ff5f175f000-7ff5f1760000 rwxp 00002000 08:01 925263                     /usr/lib/x86_64-linux-gnu/libXdamage.so.1.1.0
+7ff5f1760000-7ff5f1762000 r-xp 00000000 08:01 925259                     /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7ff5f1762000-7ff5f1961000 ---p 00002000 08:01 925259                     /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7ff5f1961000-7ff5f1962000 r-xp 00001000 08:01 925259                     /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7ff5f1962000-7ff5f1963000 rwxp 00002000 08:01 925259                     /usr/lib/x86_64-linux-gnu/libXcomposite.so.1.0.0
+7ff5f1963000-7ff5f196c000 r-xp 00000000 08:01 919303                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7ff5f196c000-7ff5f1b6b000 ---p 00009000 08:01 919303                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7ff5f1b6b000-7ff5f1b6c000 r-xp 00008000 08:01 919303                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7ff5f1b6c000-7ff5f1b6d000 rwxp 00009000 08:01 919303                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7ff5f1b6d000-7ff5f1b74000 r-xp 00000000 08:01 919311                     /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7ff5f1b74000-7ff5f1d73000 ---p 00007000 08:01 919311                     /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7ff5f1d73000-7ff5f1d74000 r-xp 00006000 08:01 919311                     /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7ff5f1d74000-7ff5f1d75000 rwxp 00007000 08:01 919311                     /usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0
+7ff5f1d75000-7ff5f1d83000 r-xp 00000000 08:01 919259                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7ff5f1d83000-7ff5f1f82000 ---p 0000e000 08:01 919259                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7ff5f1f82000-7ff5f1f83000 r-xp 0000d000 08:01 919259                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7ff5f1f83000-7ff5f1f84000 rwxp 0000e000 08:01 919259                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7ff5f1f84000-7ff5f1f86000 r-xp 00000000 08:01 919305                     /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7ff5f1f86000-7ff5f2185000 ---p 00002000 08:01 919305                     /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7ff5f2185000-7ff5f2186000 r-xp 00001000 08:01 919305                     /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7ff5f2186000-7ff5f2187000 rwxp 00002000 08:01 919305                     /usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0
+7ff5f2187000-7ff5f2190000 r-xp 00000000 08:01 919252                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7ff5f2190000-7ff5f238f000 ---p 00009000 08:01 919252                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7ff5f238f000-7ff5f2390000 r-xp 00008000 08:01 919252                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7ff5f2390000-7ff5f2391000 rwxp 00009000 08:01 919252                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7ff5f2391000-7ff5f23a1000 r-xp 00000000 08:01 919123                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7ff5f23a1000-7ff5f25a0000 ---p 00010000 08:01 919123                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7ff5f25a0000-7ff5f25a1000 r-xp 0000f000 08:01 919123                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7ff5f25a1000-7ff5f25a2000 rwxp 00010000 08:01 919123                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7ff5f25a2000-7ff5f25d6000 r-xp 00000000 08:01 925449                     /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.4.4
+7ff5f25d6000-7ff5f27d6000 ---p 00034000 08:01 925449                     /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.4.4
+7ff5f27d6000-7ff5f27d7000 r-xp 00034000 08:01 925449                     /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.4.4
+7ff5f27d7000-7ff5f27d8000 rwxp 00035000 08:01 925449                     /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.4.4
+7ff5f27d8000-7ff5f2920000 r-xp 00000000 08:01 925490                     /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3200.3
+7ff5f2920000-7ff5f2b1f000 ---p 00148000 08:01 925490                     /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3200.3
+7ff5f2b1f000-7ff5f2b23000 r-xp 00147000 08:01 925490                     /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3200.3
+7ff5f2b23000-7ff5f2b25000 rwxp 0014b000 08:01 925490                     /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.3200.3
+7ff5f2b25000-7ff5f2b27000 rwxp 00000000 00:00 0 
+7ff5f2b27000-7ff5f2b45000 r-xp 00000000 08:01 925478                     /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2600.1
+7ff5f2b45000-7ff5f2d45000 ---p 0001e000 08:01 925478                     /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2600.1
+7ff5f2d45000-7ff5f2d46000 r-xp 0001e000 08:01 925478                     /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2600.1
+7ff5f2d46000-7ff5f2d47000 rwxp 0001f000 08:01 925478                     /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0.2600.1
+7ff5f2d47000-7ff5f2d8d000 r-xp 00000000 08:01 925692                     /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3000.0
+7ff5f2d8d000-7ff5f2f8d000 ---p 00046000 08:01 925692                     /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3000.0
+7ff5f2f8d000-7ff5f2f8f000 r-xp 00046000 08:01 925692                     /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3000.0
+7ff5f2f8f000-7ff5f2f90000 rwxp 00048000 08:01 925692                     /usr/lib/x86_64-linux-gnu/libpango-1.0.so.0.3000.0
+7ff5f2f90000-7ff5f2f9b000 r-xp 00000000 08:01 925694                     /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3000.0
+7ff5f2f9b000-7ff5f319a000 ---p 0000b000 08:01 925694                     /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3000.0
+7ff5f319a000-7ff5f319b000 r-xp 0000a000 08:01 925694                     /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3000.0
+7ff5f319b000-7ff5f319c000 rwxp 0000b000 08:01 925694                     /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so.0.3000.0
+7ff5f319c000-7ff5f3249000 r-xp 00000000 08:01 925476                     /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.10
+7ff5f3249000-7ff5f3448000 ---p 000ad000 08:01 925476                     /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.10
+7ff5f3448000-7ff5f344c000 r-xp 000ac000 08:01 925476                     /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.10
+7ff5f344c000-7ff5f344e000 rwxp 000b0000 08:01 925476                     /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0.2400.10
+7ff5f344e000-7ff5f348a000 r-xp 00000000 08:01 396996                     /lib/x86_64-linux-gnu/libpcre.so.3.12.1
+7ff5f348a000-7ff5f3689000 ---p 0003c000 08:01 396996                     /lib/x86_64-linux-gnu/libpcre.so.3.12.1
+7ff5f3689000-7ff5f368a000 r-xp 0003b000 08:01 396996                     /lib/x86_64-linux-gnu/libpcre.so.3.12.1
+7ff5f368a000-7ff5f368b000 rwxp 0003c000 08:01 396996                     /lib/x86_64-linux-gnu/libpcre.so.3.12.1
+7ff5f368b000-7ff5f3692000 r-xp 00000000 08:01 925447                     /usr/lib/x86_64-linux-gnu/libffi.so.6.0.0
+7ff5f3692000-7ff5f3891000 ---p 00007000 08:01 925447                     /usr/lib/x86_64-linux-gnu/libffi.so.6.0.0
+7ff5f3891000-7ff5f3892000 r-xp 00006000 08:01 925447                     /usr/lib/x86_64-linux-gnu/libffi.so.6.0.0
+7ff5f3892000-7ff5f3893000 rwxp 00007000 08:01 925447                     /usr/lib/x86_64-linux-gnu/libffi.so.6.0.0
+7ff5f3893000-7ff5f3985000 r-xp 00000000 08:01 396948                     /lib/x86_64-linux-gnu/libglib-2.0.so.0.3200.3
+7ff5f3985000-7ff5f3b85000 ---p 000f2000 08:01 396948                     /lib/x86_64-linux-gnu/libglib-2.0.so.0.3200.3
+7ff5f3b85000-7ff5f3b86000 r-xp 000f2000 08:01 396948                     /lib/x86_64-linux-gnu/libglib-2.0.so.0.3200.3
+7ff5f3b86000-7ff5f3b87000 rwxp 000f3000 08:01 396948                     /lib/x86_64-linux-gnu/libglib-2.0.so.0.3200.3
+7ff5f3b87000-7ff5f3b88000 rwxp 00000000 00:00 0 
+7ff5f3b88000-7ff5f3bd5000 r-xp 00000000 08:01 925514                     /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3200.3
+7ff5f3bd5000-7ff5f3dd5000 ---p 0004d000 08:01 925514                     /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3200.3
+7ff5f3dd5000-7ff5f3dd6000 r-xp 0004d000 08:01 925514                     /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3200.3
+7ff5f3dd6000-7ff5f3dd7000 rwxp 0004e000 08:01 925514                     /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.3200.3
+7ff5f3dd8000-7ff5f3dd9000 r-xs 00000000 08:01 2753567                    /var/cache/fontconfig/e7071f4a29fa870f4323321c154eba04-le64.cache-3
+7ff5f3dd9000-7ff5f3dee000 r-xs 000f6000 08:01 3546551                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.jface_3.8.0.v20120521-2332.jar
+7ff5f3dee000-7ff5f3dfd000 r-xp 00000000 08:01 3544287                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20120522-1813/eclipse_1502.so
+7ff5f3dfd000-7ff5f3efd000 ---p 0000f000 08:01 3544287                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20120522-1813/eclipse_1502.so
+7ff5f3efd000-7ff5f3efe000 rwxp 0000f000 08:01 3544287                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20120522-1813/eclipse_1502.so
+7ff5f3efe000-7ff5f3eff000 rwxp 00000000 00:00 0 
+7ff5f3eff000-7ff5f3f00000 ---p 00000000 00:00 0 
+7ff5f3f00000-7ff5f4000000 rwxp 00000000 00:00 0                          [stack:14198]
+7ff5f4000000-7ff5f571c000 rwxp 00000000 00:00 0 
+7ff5f571c000-7ff5f8000000 ---p 00000000 00:00 0 
+7ff5f8000000-7ff5f8021000 rwxp 00000000 00:00 0 
+7ff5f8021000-7ff5fc000000 ---p 00000000 00:00 0 
+7ff5fc000000-7ff5fc021000 rwxp 00000000 00:00 0 
+7ff5fc021000-7ff600000000 ---p 00000000 00:00 0 
+7ff600000000-7ff602814000 rwxp 00000000 00:00 0 
+7ff602814000-7ff604000000 ---p 00000000 00:00 0 
+7ff604000000-7ff604021000 rwxp 00000000 00:00 0 
+7ff604021000-7ff608000000 ---p 00000000 00:00 0 
+7ff608000000-7ff608021000 rwxp 00000000 00:00 0 
+7ff608021000-7ff60c000000 ---p 00000000 00:00 0 
+7ff60c000000-7ff60c028000 rwxp 00000000 00:00 0 
+7ff60c028000-7ff610000000 ---p 00000000 00:00 0 
+7ff610000000-7ff610132000 rwxp 00000000 00:00 0 
+7ff610132000-7ff614000000 ---p 00000000 00:00 0 
+7ff614000000-7ff614021000 rwxp 00000000 00:00 0 
+7ff614021000-7ff618000000 ---p 00000000 00:00 0 
+7ff618000000-7ff618021000 rwxp 00000000 00:00 0 
+7ff618021000-7ff61c000000 ---p 00000000 00:00 0 
+7ff61c000000-7ff61c021000 rwxp 00000000 00:00 0 
+7ff61c021000-7ff620000000 ---p 00000000 00:00 0 
+7ff620000000-7ff620001000 r-xs 00000000 08:01 2753540                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-3
+7ff620001000-7ff620004000 r-xs 00000000 08:01 2753545                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-3
+7ff620004000-7ff620005000 r-xs 00000000 08:01 2758518                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-3
+7ff620005000-7ff620008000 r-xs 00000000 08:01 2753554                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-3
+7ff620008000-7ff62000d000 r-xs 00000000 08:01 2753543                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-3
+7ff62000d000-7ff620010000 r-xs 00000000 08:01 2754717                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-3
+7ff620010000-7ff620014000 r-xs 00000000 08:01 2754936                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-3
+7ff620014000-7ff620017000 ---p 00000000 00:00 0 
+7ff620017000-7ff620115000 rwxp 00000000 00:00 0                          [stack:14197]
+7ff620115000-7ff620118000 ---p 00000000 00:00 0 
+7ff620118000-7ff620216000 rwxp 00000000 00:00 0                          [stack:14196]
+7ff620216000-7ff620219000 ---p 00000000 00:00 0 
+7ff620219000-7ff620317000 rwxp 00000000 00:00 0                          [stack:14195]
+7ff620317000-7ff62031a000 ---p 00000000 00:00 0 
+7ff62031a000-7ff620418000 rwxp 00000000 00:00 0                          [stack:14194]
+7ff620418000-7ff620afb000 r-xp 00000000 08:01 924413                     /usr/lib/locale/locale-archive
+7ff620afb000-7ff620afe000 ---p 00000000 00:00 0 
+7ff620afe000-7ff620bfc000 rwxp 00000000 00:00 0                          [stack:14193]
+7ff620bfc000-7ff620bff000 ---p 00000000 00:00 0 
+7ff620bff000-7ff620cfd000 rwxp 00000000 00:00 0                          [stack:14192]
+7ff620cfd000-7ff620cfe000 ---p 00000000 00:00 0 
+7ff620cfe000-7ff629f00000 rwxp 00000000 00:00 0                          [stack:14191]
+7ff629f00000-7ff62a630000 ---p 00000000 00:00 0 
+7ff62a630000-7ff631000000 rwxp 00000000 00:00 0 
+7ff631000000-7ff6341d0000 rwxp 00000000 00:00 0 
+7ff6341d0000-7ff641000000 rwxp 00000000 00:00 0 
+7ff641000000-7ff649000000 rwxp 00000000 00:00 0 
+7ff649000000-7ff6492c0000 rwxp 00000000 00:00 0 
+7ff6492c0000-7ff64d51e000 rwxp 00000000 00:00 0 
+7ff64d51e000-7ff650000000 ---p 00000000 00:00 0 
+7ff650000000-7ff650001000 r-xs 00000000 08:01 2753548                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-3
+7ff650001000-7ff650002000 r-xs 00000000 08:01 2753559                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-3
+7ff650002000-7ff650005000 r-xs 00018000 08:01 3542304                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.commands_3.6.1.v20120521-2332.jar
+7ff650005000-7ff650009000 r-xs 00022000 08:01 3558427                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui_3.8.0.v20120523-1546.jar
+7ff650009000-7ff65000a000 r-xs 00004000 08:01 3542340                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.swt_3.8.0.v3833.jar
+7ff65000a000-7ff65000d000 r-xs 0000e000 08:01 3542352                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.ide.application_1.0.400.v20120523-1956.jar
+7ff65000d000-7ff65000e000 r-xs 00002000 08:01 3559709                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.filesystem.linux.x86_64_1.2.0.v20120522-1137.jar
+7ff65000e000-7ff650015000 r-xs 00083000 08:01 787727                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/jsse.jar
+7ff650015000-7ff650017000 r-xs 00010000 08:01 3559723                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.core_2.2.0.v20120430-0525.jar
+7ff650017000-7ff650019000 r-xs 00003000 08:01 3546545                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.p2.updatechecker_1.1.200.v20110808-1657.jar
+7ff650019000-7ff65001b000 r-xs 00011000 08:01 3551852                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/gnu.io.rxtx_2.1.7.4_v20071016.jar
+7ff65001b000-7ff65001e000 r-xs 00013000 08:01 3557004                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar
+7ff65001e000-7ff650020000 r-xs 00008000 08:01 3551844                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.debug.sysgen_1.0.0.jar
+7ff650020000-7ff650022000 r-xs 0000d000 08:01 3559710                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.filesystem_1.3.200.v20120522-2012.jar
+7ff650022000-7ff650025000 r-xs 00020000 08:01 410101                     /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/configuration/org.eclipse.osgi/bundles/28/2/.cp/lib/gson-1.6-sources.jar
+7ff650025000-7ff650027000 r-xs 00015000 08:01 3559706                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar
+7ff650027000-7ff650029000 r-xs 00002000 08:01 3546574                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.100.v20120521-2346/runtime_registry_compatibility.jar
+7ff650029000-7ff65002c000 r-xs 0002a000 08:01 3558408                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar
+7ff65002c000-7ff65002d000 r-xs 00005000 08:01 3562753                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.launch.remote_1.0.0.jar
+7ff65002d000-7ff65002f000 r-xs 00010000 08:01 3546519                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.debug.ui_1.0.0.jar
+7ff65002f000-7ff650031000 r-xs 00017000 08:01 3546571                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.update.configurator_3.3.200.v20120523-1742.jar
+7ff650031000-7ff65004d000 r-xs 00000000 08:01 1186268                    /usr/share/mime/mime.cache
+7ff65004d000-7ff650384000 rwxp 00000000 00:00 0 
+7ff650384000-7ff65051b000 r-xs 02b02000 08:01 787728                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/rt.jar
+7ff65051b000-7ff65051c000 ---p 00000000 00:00 0 
+7ff65051c000-7ff65061c000 rwxp 00000000 00:00 0                          [stack:14190]
+7ff65061c000-7ff65061d000 ---p 00000000 00:00 0 
+7ff65061d000-7ff65071d000 rwxp 00000000 00:00 0                          [stack:14189]
+7ff65071d000-7ff65071e000 ---p 00000000 00:00 0 
+7ff65071e000-7ff65081e000 rwxp 00000000 00:00 0                          [stack:14188]
+7ff65081e000-7ff65081f000 ---p 00000000 00:00 0 
+7ff65081f000-7ff650967000 rwxp 00000000 00:00 0                          [stack:14187]
+7ff650967000-7ff65096b000 ---p 00000000 00:00 0 
+7ff65096b000-7ff65099f000 rwxp 00000000 00:00 0 
+7ff65099f000-7ff6509b8000 rwxp 00000000 00:00 0 
+7ff6509b8000-7ff650a1f000 rwxp 00000000 00:00 0 
+7ff650a1f000-7ff650a67000 rwxp 00000000 00:00 0 
+7ff650a67000-7ff650a6b000 ---p 00000000 00:00 0 
+7ff650a6b000-7ff650a9f000 rwxp 00000000 00:00 0 
+7ff650a9f000-7ff650ab8000 rwxp 00000000 00:00 0 
+7ff650ab8000-7ff650b1f000 rwxp 00000000 00:00 0 
+7ff650b1f000-7ff650b5f000 rwxp 00000000 00:00 0 
+7ff650b5f000-7ff650b60000 rwxp 00000000 00:00 0 
+7ff650b60000-7ff650b6e000 r-xp 00000000 08:01 793933                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7ff650b6e000-7ff650c70000 ---p 0000e000 08:01 793933                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7ff650c70000-7ff650c73000 rwxp 00010000 08:01 793933                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libzip.so
+7ff650c73000-7ff650c74000 rwxp 00000000 00:00 0 
+7ff650c74000-7ff650c80000 r-xp 00000000 08:01 394055                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7ff650c80000-7ff650e7f000 ---p 0000c000 08:01 394055                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7ff650e7f000-7ff650e80000 r-xp 0000b000 08:01 394055                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7ff650e80000-7ff650e81000 rwxp 0000c000 08:01 394055                     /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7ff650e81000-7ff650e8b000 r-xp 00000000 08:01 394051                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7ff650e8b000-7ff65108b000 ---p 0000a000 08:01 394051                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7ff65108b000-7ff65108c000 r-xp 0000a000 08:01 394051                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7ff65108c000-7ff65108d000 rwxp 0000b000 08:01 394051                     /lib/x86_64-linux-gnu/libnss_nis-2.15.so
+7ff65108d000-7ff651095000 r-xp 00000000 08:01 394056                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7ff651095000-7ff651294000 ---p 00008000 08:01 394056                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7ff651294000-7ff651295000 r-xp 00007000 08:01 394056                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7ff651295000-7ff651296000 rwxp 00008000 08:01 394056                     /lib/x86_64-linux-gnu/libnss_compat-2.15.so
+7ff651296000-7ff65129d000 r-xp 00000000 08:01 806313                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7ff65129d000-7ff65139e000 ---p 00007000 08:01 806313                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7ff65139e000-7ff6513a0000 rwxp 00008000 08:01 806313                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/native_threads/libhpi.so
+7ff6513a0000-7ff6513a1000 rwxp 00000000 00:00 0 
+7ff6513a1000-7ff6513b8000 r-xp 00000000 08:01 397137                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+7ff6513b8000-7ff6515b7000 ---p 00017000 08:01 397137                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+7ff6515b7000-7ff6515b8000 r-xp 00016000 08:01 397137                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+7ff6515b8000-7ff6515b9000 rwxp 00017000 08:01 397137                     /lib/x86_64-linux-gnu/libnsl-2.15.so
+7ff6515b9000-7ff6515bb000 rwxp 00000000 00:00 0 
+7ff6515bb000-7ff6515e3000 r-xp 00000000 08:01 806559                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7ff6515e3000-7ff6516e3000 ---p 00028000 08:01 806559                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7ff6516e3000-7ff6516ea000 rwxp 00028000 08:01 806559                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libjava.so
+7ff6516ea000-7ff6516f7000 r-xp 00000000 08:01 813647                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7ff6516f7000-7ff6517f6000 ---p 0000d000 08:01 813647                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7ff6517f6000-7ff6517f9000 rwxp 0000c000 08:01 813647                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/libverify.so
+7ff6517f9000-7ff651800000 r-xp 00000000 08:01 394048                     /lib/x86_64-linux-gnu/librt-2.15.so
+7ff651800000-7ff6519ff000 ---p 00007000 08:01 394048                     /lib/x86_64-linux-gnu/librt-2.15.so
+7ff6519ff000-7ff651a00000 r-xp 00006000 08:01 394048                     /lib/x86_64-linux-gnu/librt-2.15.so
+7ff651a00000-7ff651a01000 rwxp 00007000 08:01 394048                     /lib/x86_64-linux-gnu/librt-2.15.so
+7ff651a01000-7ff651a04000 ---p 00000000 00:00 0 
+7ff651a04000-7ff651b02000 rwxp 00000000 00:00 0                          [stack:14186]
+7ff651b02000-7ff651bfd000 r-xp 00000000 08:01 394053                     /lib/x86_64-linux-gnu/libm-2.15.so
+7ff651bfd000-7ff651dfc000 ---p 000fb000 08:01 394053                     /lib/x86_64-linux-gnu/libm-2.15.so
+7ff651dfc000-7ff651dfd000 r-xp 000fa000 08:01 394053                     /lib/x86_64-linux-gnu/libm-2.15.so
+7ff651dfd000-7ff651dfe000 rwxp 000fb000 08:01 394053                     /lib/x86_64-linux-gnu/libm-2.15.so
+7ff651dfe000-7ff6525d8000 r-xp 00000000 08:01 806563                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7ff6525d8000-7ff6526da000 ---p 007da000 08:01 806563                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7ff6526da000-7ff65286b000 rwxp 007dc000 08:01 806563                     /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server/libjvm.so
+7ff65286b000-7ff6528a6000 rwxp 00000000 00:00 0 
+7ff6528a6000-7ff652a5b000 r-xp 00000000 08:01 394044                     /lib/x86_64-linux-gnu/libc-2.15.so
+7ff652a5b000-7ff652c5a000 ---p 001b5000 08:01 394044                     /lib/x86_64-linux-gnu/libc-2.15.so
+7ff652c5a000-7ff652c5e000 r-xp 001b4000 08:01 394044                     /lib/x86_64-linux-gnu/libc-2.15.so
+7ff652c5e000-7ff652c60000 rwxp 001b8000 08:01 394044                     /lib/x86_64-linux-gnu/libc-2.15.so
+7ff652c60000-7ff652c65000 rwxp 00000000 00:00 0 
+7ff652c65000-7ff652c67000 r-xp 00000000 08:01 394043                     /lib/x86_64-linux-gnu/libdl-2.15.so
+7ff652c67000-7ff652e67000 ---p 00002000 08:01 394043                     /lib/x86_64-linux-gnu/libdl-2.15.so
+7ff652e67000-7ff652e68000 r-xp 00002000 08:01 394043                     /lib/x86_64-linux-gnu/libdl-2.15.so
+7ff652e68000-7ff652e69000 rwxp 00003000 08:01 394043                     /lib/x86_64-linux-gnu/libdl-2.15.so
+7ff652e69000-7ff652e81000 r-xp 00000000 08:01 394046                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7ff652e81000-7ff653080000 ---p 00018000 08:01 394046                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7ff653080000-7ff653081000 r-xp 00017000 08:01 394046                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7ff653081000-7ff653082000 rwxp 00018000 08:01 394046                     /lib/x86_64-linux-gnu/libpthread-2.15.so
+7ff653082000-7ff653086000 rwxp 00000000 00:00 0 
+7ff653086000-7ff6530a8000 r-xp 00000000 08:01 397132                     /lib/x86_64-linux-gnu/ld-2.15.so
+7ff6530a8000-7ff6530a9000 r-xs 00002000 08:01 3542280                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.ui.workbench.compatibility_3.2.101.v20120523-1956/compatibility.jar
+7ff6530aa000-7ff6530ad000 r-xs 00011000 08:01 3558411                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.util_1.0.400.v20120522-2049.jar
+7ff6530ad000-7ff6530c1000 r-xs 00141000 08:01 3559732                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.osgi_3.8.0.v20120529-1548.jar
+7ff6530c1000-7ff6530cc000 rwxp 00000000 00:00 0 
+7ff6530cc000-7ff653181000 rwxp 00000000 00:00 0 
+7ff653181000-7ff653184000 rwxp 00000000 00:00 0 
+7ff653184000-7ff65318b000 r-xp 00000000 08:01 1450774                    /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7ff65318b000-7ff65328c000 ---p 00007000 08:01 1450774                    /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7ff65328c000-7ff65328e000 rwxp 00008000 08:01 1450774                    /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/jli/libjli.so
+7ff65328e000-7ff65328f000 rwxp 00000000 00:00 0 
+7ff65328f000-7ff653291000 r-xs 00011000 08:01 3559715                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar
+7ff653292000-7ff653294000 r-xs 00009000 08:01 3558381                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.debug.core_1.0.0.jar
+7ff653294000-7ff653297000 r-xs 00018000 08:01 3559719                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar
+7ff653297000-7ff653298000 r-xs 00004000 08:01 3546566                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.tcf_1.1.0.201301251521.jar
+7ff653298000-7ff653299000 r-xs 00001000 08:01 3551846                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.monitors_1.0.0.jar
+7ff653299000-7ff65329a000 r-xs 00000000 08:01 3407881                    /root/.cache/dconf/user
+7ff65329a000-7ff65329c000 r-xs 0000b000 08:01 3542310                    /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+7ff65329c000-7ff6532a4000 rwxs 00000000 08:01 3025849                    /tmp/hsperfdata_root/14185
+7ff6532a4000-7ff6532a5000 rwxp 00000000 00:00 0 
+7ff6532a5000-7ff6532a6000 ---p 00000000 00:00 0 
+7ff6532a6000-7ff6532a8000 rwxp 00000000 00:00 0 
+7ff6532a8000-7ff6532a9000 r-xp 00022000 08:01 397132                     /lib/x86_64-linux-gnu/ld-2.15.so
+7ff6532a9000-7ff6532ab000 rwxp 00023000 08:01 397132                     /lib/x86_64-linux-gnu/ld-2.15.so
+7fff1244f000-7fff12471000 rwxp 00000000 00:00 0                          [stack]
+7fff125ba000-7fff125bb000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xms40m -Xmx384m -XX:MaxPermSize=256m 
+java_command: /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse//plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar -os linux -ws gtk -arch x86_64 -showsplash /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse//plugins/com.xilinx.sdk.product_1.0.0/splash.bmp -launcher /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse/eclipse -name Eclipse --launcher.library /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse//plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.200.v20120522-1813/eclipse_1502.so -startup /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse//plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar --launcher.overrideVmargs -exitdata 5330003 -vm /opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/bin/java -vmargs -Xms40m -Xmx384m -XX:MaxPermSize=256m -jar /opt/Xilinx/14.5/ISE_DS/EDK/eclipse/lin64/eclipse//plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/opt/Xilinx/14.5/ISE_DS/EDK/bin/lin64:/opt/Xilinx/14.5/ISE_DS/common/bin/lin64:/opt/Xilinx/14.5/ISE_DS/ISE/bin/lin64:/opt/Xilinx/14.5/ISE_DS/EDK/gnu/microblaze/lin64/bin:/opt/Xilinx/14.5/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/Xilinx/14.5/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/Xilinx/14.5/ISE_DS/EDK/gnu/powerpc-eabi/lin64/bin:/opt/Xilinx/14.5/ISE_DS/ISE/sysgen/util:/opt/Xilinx/14.5/ISE_DS/ISE/sysgen/bin:/opt/Xilinx/14.5/ISE_DS/ISE/../../../DocNav:/opt/Xilinx/14.5/ISE_DS/PlanAhead/bin:/opt/Xilinx/14.5/ISE_DS/EDK/gnu/arm/lin/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/google/chrome:/opt/Xilinx/CodeSourcery/Sourcery_CodeBench_Lite_for_Xilinx_EABI/bin
+USERNAME=root
+LD_LIBRARY_PATH=/opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64/server:/opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/lib/amd64:/opt/Xilinx/14.5/ISE_DS/ISE/java6/lin64/jre/../lib/amd64:/opt/Xilinx/14.5/ISE_DS/EDK/lib/lin64:/opt/Xilinx/14.5/ISE_DS/common/lib/lin64:/opt/Xilinx/14.5/ISE_DS/ISE/lib/lin64
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x7311c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x7311c0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00001000, sa_flags=0x10000000
+SIGXFSZ: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x5f5da0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x5f85c0], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x5f8310], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.5.0-34-generic #55~precise1-Ubuntu SMP Fri Jun 7 16:25:50 UTC 2013 x86_64
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 31436, NOFILE 4096, AS infinity
+load average:0.92 0.41 0.40
+
+CPU:total 4 (1 cores per cpu, 1 threads per core) family 6 model 30 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt
+
+Memory: 4k page, physical 4042472k(1282996k free), swap 1046524k(1046524k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0-b16) for linux-amd64 JRE (1.6.0_21-b06), built on Jun 22 2010 01:10:00 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Sun Jun 23 21:38:36 2013
+elapsed time: 271 seconds
+

@@ -1,0 +1,16 @@
+Fri Jul 05 18:28:29 PDT 2013
+ERROR org.eclipse.rse.ui  Exception resolving filters' strings 
+org.eclipse.rse.services.clientserver.messages.SystemOperationFailedException: Failed to connect sshd on "192.168.1.10:22"
+	at org.eclipse.rse.internal.connectorservice.ssh.SshConnectorService.internalConnect(SshConnectorService.java:197)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:500)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:444)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:506)
+	at org.eclipse.rse.core.subsystems.SubSystem.connect(SubSystem.java:2545)
+	at org.eclipse.rse.core.subsystems.SubSystem.checkIsConnected(SubSystem.java:570)
+	at org.eclipse.rse.core.subsystems.SubSystem.resolveFilterStrings(SubSystem.java:2288)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.internalGetChildren(SystemViewFilterReferenceAdapter.java:466)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:284)
+	at org.eclipse.rse.internal.ui.view.SystemViewFilterReferenceAdapter.getChildren(SystemViewFilterReferenceAdapter.java:292)
+	at org.eclipse.rse.internal.ui.view.SystemViewFormLabelAndContentProvider$1$MyRunnable.run(SystemViewFormLabelAndContentProvider.java:62)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+--------------------------------------------

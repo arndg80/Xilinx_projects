@@ -1,0 +1,4 @@
+# Connect to Push Button "BTNU"
+NET axi_gpio_0_GPIO_IO_pin IOSTANDARD=LVCMOS25|LOC=T18;
+# Connect to Push Button "BTNR"
+NET processing_system7_0_GPIO_pin IOSTANDARD=LVCMOS25|LOC=R18;
