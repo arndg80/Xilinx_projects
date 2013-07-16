@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          /mnt/hgfs/Drive_E/Xilinx_projects/Custom_IP_example_verilog/Custom_IP_example_verilog.srcs/sources_1/edk/system/pcores/blink_v1_00_a/data/blink_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Jul 14 15:39:34 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib blink_v1_00_a user_logic verilog
+lib blink_v1_00_a blink vhdl
